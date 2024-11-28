@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:false},ajax:{deny_list:["*","bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VwAEUldXGwICXVJaBAkGVQ==",licenseKey:"c72205da0c",applicationID:"129383813"};;/*! For license information please see nr-loader-full-1.274.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555:(e,t,r)=>{"use strict";r.d(t,{Vp:()=>c,fn:()=>s,x1:()=>d});var n=r(384),i=r(8122);const o={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){try{const t=c(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}function c(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function d(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.info=a[e])}},9417:(e,t,r)=>{"use strict";r.d(t,{D0:()=>h,gD:()=>p,xN:()=>g});var n=r(993);const i=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var o=r(2614),a=r(944),s=r(384),c=r(8122);const d="[data-nr-mask]",u=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},feature_flags:[],generic_events:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},harvest:{tooManyRequestsDelay:60},jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},logging:{enabled:!0,harvestTimeSeconds:10,autoStart:!0,level:n.p_.INFO},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:o.wk,inactiveMs:o.BB},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){i(t)?e.mask_selector="".concat(t,",").concat(d):""===t||null===t?e.mask_selector=d:(0,a.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){i(t)?e.block_selector+=",".concat(t):""!==t&&(0,a.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,a.R)(7,t)}},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},ssl:void 0,user_actions:{enabled:!0}}},l={},f="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(f);if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error(f);l[e]=(0,c.a)(t,u());const r=(0,s.nY)(e);r&&(r.init=l[e])}function p(e,t){if(!e)throw new Error(f);var r=h(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}},5603:(e,t,r)=>{"use strict";r.d(t,{a:()=>c,o:()=>s});var n=r(384),i=r(8122);const o={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},a={};function s(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!a[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.loader_config=a[e])}},3371:(e,t,r)=>{"use strict";r.d(t,{V:()=>f,f:()=>l});var n=r(8122),i=r(384),o=r(6154),a=r(9324);let s=0;const c={buildEnv:a.F3,distMethod:a.Xs,version:a.xv,originTime:o.WN},d={customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,onerror:void 0,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,denyList:void 0,timeKeeper:void 0,obfuscator:void 0},u={};function l(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!u[e])throw new Error("Runtime for ".concat(e," was never set"));return u[e]}function f(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");u[e]={...(0,n.a)(t,d),...c},Object.hasOwnProperty.call(u[e],"harvestCount")||Object.defineProperty(u[e],"harvestCount",{get:()=>++s});const r=(0,i.nY)(e);r&&(r.runtime=u[e])}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>o,Yq:()=>a,xv:()=>n});const n="1.274.0",i="PROD",o="CDN",a="^2.0.0-alpha.17"},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>d,RI:()=>i,WN:()=>f,bv:()=>o,gm:()=>a,lR:()=>l,m:()=>c,mw:()=>s,sb:()=>u});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===a?.document?.visibilityState),c=""+a?.location,d=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),u=d&&"undefined"==typeof SharedWorker,l=(()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Date.now()-(0,n.t)()},7295:(e,t,r)=>{"use strict";r.d(t,{Xv:()=>a,gX:()=>i,iW:()=>o});var n=[];function i(e){if(!e||o(e))return!1;if(0===n.length)return!0;for(var t=0;t<n.length;t++){var r=n[t];if("*"===r.hostname)return!1;if(s(r.hostname,e.hostname)&&c(r.pathname,e.pathname))return!1}return!0}function o(e){return void 0===e.hostname}function a(e){if(n=[],e&&e.length)for(var t=0;t<e.length;t++){let r=e[t];if(!r)continue;0===r.indexOf("http://")?r=r.substring(7):0===r.indexOf("https://")&&(r=r.substring(8));const i=r.indexOf("/");let o,a;i>0?(o=r.substring(0,i),a=r.substring(i)):(o=r,a="");let[s]=o.split(":");n.push({hostname:s,pathname:a})}}function s(e,t){return!(e.length>t.length)&&t.indexOf(e)===t.length-e.length}function c(e,t){return 0===e.indexOf("/")&&(e=e.substring(1)),0===t.indexOf("/")&&(t=t.substring(1)),""===e||e===t}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>c,Ze:()=>l,x3:()=>d});var n=r(7836),i=r(3606),o=r(860),a=r(2646);const s={};function c(e,t){const r={staged:!1,priority:o.P3[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function d(e,t){e&&s[e]&&(s[e].get(t)&&s[e].delete(t),h(e,t,!1),s[e].size&&f(e))}function u(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(e="",t="feature",r=!1){if(u(e),!e||!s[e].get(t)||r)return h(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=Array.from(s[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{s[e].delete(t),h(e,t)})))}function h(e,t,r=!0){const o=e?n.ee.get(e):n.ee,s=i.i.handlers;if(!o.aborted&&o.backlog&&s){if(r){const e=o.backlog[t],r=s[t];if(r){for(let t=0;e&&t<e.length;++t)g(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof a.y&&t[0].on(e,t[1])}))}))}}o.isolatedBacklog||delete s[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function g(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],o=e[2];n.apply(i,o)}}))}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>c,ee:()=>d});var n=r(384),i=r(8990),o=r(3371),a=r(2646),s=r(5607);const c="nr@context:".concat(s.W),d=function e(t,r){var n={},s={},u={},l=!1;try{l=16===r.length&&(0,o.f)(r).isolatedBacklog}catch(e){}var f={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(d.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=h(n),c=p(e),u=c.length,l=0;l<u;l++)c[l].apply(a,r);var g=v()[s[e]];g&&g.push([f,e,r,a]);return a},get:m,listeners:p,context:h,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function h(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,c,(()=>new a.y(c))):new a.y(c)}function g(e,t){n[e]=p(e).concat(t)}function p(e){return n[e]||[]}function m(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=d)},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>o});var n=r(9908);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.d,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.d);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function o(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>o,jT:()=>n,sp:()=>i})},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,ZF:()=>c,bz:()=>a,el:()=>d});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function d(){return s(32)}},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>o});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},7485:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(6154);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n.gm?.location?.protocol&&t.host===n.gm?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},944:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.debug&&console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t)}r.d(t,{R:()=>n})},5284:(e,t,r)=>{"use strict";r.d(t,{t:()=>c,B:()=>s});var n=r(7836),i=r(6154);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(e={}){try{i.gm.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},3304:(e,t,r)=>{"use strict";r.d(t,{A:()=>o});var n=r(7836);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())??""}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}return""}}},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,sB:()=>a});var n=r(3878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.sp)("load",e,t)}function a(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>u,Zm:()=>a,bQ:()=>c,dV:()=>s,nY:()=>d,pV:()=>l});var n=r(6154),i=r(1863);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=a();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function d(e){let t=a();return t.initializedAgents?.[e]}function u(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},2843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},8139:(e,t,r)=>{"use strict";r.d(t,{u:()=>f});var n=r(7836),i=r(3434),o=r(8990),a=r(6154);const s={},c=a.gm.XMLHttpRequest,d="addEventListener",u="removeEventListener",l="nr@wrapped:".concat(n.P);function f(e){var t=function(e){return(e||n.ee).get("events")}(e);if(s[t.debugId]++)return t;s[t.debugId]=1;var r=(0,i.YM)(t,!0);function f(e){r.inPlace(e,[d,u],"-",g)}function g(e,t){return e[1]}return"getPrototypeOf"in Object&&(a.RI&&h(document,f),h(a.gm,f),h(c.prototype,f)),t.on(d+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,o.I)(n,l,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(u+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function h(e,t,...r){let n=e;for(;"object"==typeof n&&!Object.prototype.hasOwnProperty.call(n,d);)n=Object.getPrototypeOf(n);n&&t(n,...r)}},3434:(e,t,r)=>{"use strict";r.d(t,{YM:()=>c});var n=r(7836),i=r(5607);const o="nr@original:".concat(i.W);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],d=e[c];u(d)||(e[c]=r(d,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return u(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){d([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,u,l;try{a=this,o=[...arguments],u="function"==typeof n?n(o,a):n||{}}catch(t){d([t,"",[o,a,s],u],e)}i(r+"start",[o,a,s],u,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],u,c),e}finally{i(r+"end",[o,a,l],u,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){d([t,r,n,i],e)}s=a}}}function d(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function u(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}},9300:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.ajax},3333:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,Zp:()=>i,mq:()=>s,nf:()=>a,qN:()=>o});const n=r(860).K7.genericEvents,i=["auxclick","click","copy","keydown","paste","scrollend"],o=["focus","blur"],a=4,s=1e3},6774:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.jserrors},993:(e,t,r)=>{"use strict";r.d(t,{ET:()=>o,TZ:()=>a,p_:()=>i});var n=r(860);const i={ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"},o="log",a=n.K7.logging},3785:(e,t,r)=>{"use strict";r.d(t,{R:()=>c,b:()=>d});var n=r(9908),i=r(1863),o=r(860),a=r(3969),s=r(993);function c(e,t,r={},c=s.p_.INFO){(0,n.p)(a.xV,["API/logging/".concat(c.toLowerCase(),"/called")],void 0,o.K7.metrics,e),(0,n.p)(s.ET,[(0,i.t)(),t,r,c],void 0,o.K7.logging,e)}function d(e){return"string"==typeof e&&Object.values(s.p_).some((t=>t===e.toUpperCase().trim()))}},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>a,z_:()=>o});const n=r(860).K7.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},6344:(e,t,r)=>{"use strict";r.d(t,{BB:()=>u,G4:()=>o,Qb:()=>l,TZ:()=>i,Ug:()=>a,_s:()=>s,bc:()=>d,yP:()=>c});var n=r(2614);const i=r(860).K7.sessionReplay,o={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"},a=.12,s={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},c={[n.g.ERROR]:15e3,[n.g.FULL]:3e5,[n.g.OFF]:0},d={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},u=5e3,l={API:"api"}},5270:(e,t,r)=>{"use strict";r.d(t,{Aw:()=>c,CT:()=>d,SR:()=>s});var n=r(384),i=r(9417),o=r(7767),a=r(6154);function s(e){return!!(0,n.dV)().o.MO&&(0,o.V)(e)&&!0===(0,i.gD)(e,"session_trace.enabled")}function c(e){return!0===(0,i.gD)(e,"session_replay.preload")&&s(e)}function d(e,t){const r=t.correctAbsoluteTimestamp(e);return{originalTimestamp:e,correctedTimestamp:r,timestampDiff:e-r,originTime:a.WN,correctedOriginTime:t.correctedOriginTime,originTimeDiff:Math.floor(a.WN-t.correctedOriginTime)}}},3738:(e,t,r)=>{"use strict";r.d(t,{He:()=>i,Kp:()=>s,Lc:()=>d,Rz:()=>u,TZ:()=>n,bD:()=>o,d3:()=>a,jx:()=>l,uP:()=>c});const n=r(860).K7.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,d="fn"+s,u="pushState",l=1e3},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>o});var n=r(7836),i=r(1687);class o{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},7767:(e,t,r)=>{"use strict";r.d(t,{V:()=>o});var n=r(9417),i=r(6154);const o=e=>i.RI&&!0===(0,n.gD)(e,"privacy.cookies_enabled")},425:(e,t,r)=>{"use strict";r.d(t,{j:()=>P});var n=r(860),i=r(2555),o=r(3371),a=r(9908),s=r(7836),c=r(1687),d=r(5289),u=r(6154),l=r(944),f=r(3969),h=r(384),g=r(6344);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start",g.G4.RECORD,g.G4.PAUSE,"log","wrapLogger"],m=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(1863),b=r(2614),y=r(993),R=r(3785),x=r(2646),w=r(3434);function T(e,t,r,n){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,l.R)(29);const i=function(e){return(e||s.ee).get("logger")}(e),o=(0,w.YM)(i),a=new x.y(s.P);return a.level=n.level,a.customAttributes=n.customAttributes,o.inPlace(t,[r],"wrap-logger-",a),i}function A(){const e=(0,h.pV)();p.forEach((t=>{e[t]=(...r)=>function(t,...r){let n=[];return Object.values(e.initializedAgents).forEach((e=>{e&&e.api?e.exposed&&e.api[t]&&n.push(e.api[t](...r)):(0,l.R)(38,t)})),n.length>1?n:n[0]}(t,...r)}))}const E={};var S=r(9417),_=r(5603),O=r(5284);const N=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let I=!1;function P(e,t={},p,x){let{init:w,info:P,loader_config:j,runtime:C={},exposed:k=!0}=t;C.loaderType=p;const H=(0,h.pV)();P||(w=H.init,P=H.info,j=H.loader_config),(0,S.xN)(e.agentIdentifier,w||{}),(0,_.a)(e.agentIdentifier,j||{}),P.jsAttributes??={},u.bv&&(P.jsAttributes.isWorker=!0),(0,i.x1)(e.agentIdentifier,P);const D=(0,S.D0)(e.agentIdentifier),L=[P.beacon,P.errorBeacon];I||(D.proxy.assets&&(N(D.proxy.assets),L.push(D.proxy.assets)),D.proxy.beacon&&L.push(D.proxy.beacon),A(),(0,h.US)("activatedFeatures",O.B),e.runSoftNavOverSpa&&=!0===D.soft_navigations.enabled&&D.feature_flags.includes("soft_nav")),C.denyList=[...D.ajax.deny_list||[],...D.ajax.block_internal?L:[]],C.ptid=e.agentIdentifier,(0,o.V)(e.agentIdentifier,C),e.ee=s.ee.get(e.agentIdentifier),void 0===e.api&&(e.api=function(e,t,h=!1){t||(0,c.Ak)(e,"api");const p={};var x=s.ee.get(e),w=x.get("tracer");E[e]=b.g.OFF,x.on(g.G4.REPLAY_RUNNING,(t=>{E[e]=t}));var A="api-",S=A+"ixn-";function _(t,r,n,o){const a=(0,i.Vp)(e);return null===r?delete a.jsAttributes[t]:(0,i.x1)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),I(A,n,!0,o||null===r?"session":void 0)(t,r)}function O(){}p.log=function(e,{customAttributes:t={},level:r=y.p_.INFO}={}){(0,a.p)(f.xV,["API/log/called"],void 0,n.K7.metrics,x),(0,R.R)(x,e,t,r)},p.wrapLogger=(e,t,{customAttributes:r={},level:i=y.p_.INFO}={})=>{(0,a.p)(f.xV,["API/wrapLogger/called"],void 0,n.K7.metrics,x),T(x,e,t,{customAttributes:r,level:i})},m.forEach((e=>{p[e]=I(A,e,!0,"api")})),p.addPageAction=I(A,"addPageAction",!0,n.K7.genericEvents),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,o.f)(e).customTransaction=(r||"http://custom.transaction")+t,I(A,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t,r=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return _(e,t,"setCustomAttribute",r);(0,l.R)(40,typeof t)}else(0,l.R)(39,typeof e)},p.setUserId=function(e){if("string"==typeof e||null===e)return _("enduser.id",e,"setUserId",!0);(0,l.R)(41,typeof e)},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return _("application.version",e,"setApplicationVersion",!1);(0,l.R)(42,typeof e)},p.start=()=>{try{(0,a.p)(f.xV,["API/start/called"],void 0,n.K7.metrics,x),x.emit("manual-start-all")}catch(e){(0,l.R)(23,e)}},p[g.G4.RECORD]=function(){(0,a.p)(f.xV,["API/recordReplay/called"],void 0,n.K7.metrics,x),(0,a.p)(g.G4.RECORD,[],void 0,n.K7.sessionReplay,x)},p[g.G4.PAUSE]=function(){(0,a.p)(f.xV,["API/pauseReplay/called"],void 0,n.K7.metrics,x),(0,a.p)(g.G4.PAUSE,[],void 0,n.K7.sessionReplay,x)},p.interaction=function(e){return(new O).get("object"==typeof e?e:{})};const N=O.prototype={createTracer:function(e,t){var r={},i=this,o="function"==typeof t;return(0,a.p)(f.xV,["API/createTracer/called"],void 0,n.K7.metrics,x),h||(0,a.p)(S+"tracer",[(0,v.t)(),e,r],i,n.K7.spa,x),function(){if(w.emit((o?"":"no-")+"fn-start",[(0,v.t)(),i,o],r),o)try{return t.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw w.emit("fn-err",[arguments,this,t],r),t}finally{w.emit("fn-end",[(0,v.t)()],r)}}}};function I(e,t,r,i){return function(){return(0,a.p)(f.xV,["API/"+t+"/called"],void 0,n.K7.metrics,x),i&&(0,a.p)(e+t,[(0,v.t)(),...arguments],r?null:this,i,x),r?void 0:this}}function P(){r.e(891).then(r.bind(r,8778)).then((({setAPI:t})=>{t(e),(0,c.Ze)(e,"api")})).catch((e=>{(0,l.R)(27,e),x.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{N[e]=I(S,e,void 0,h?n.K7.softNav:n.K7.spa)})),p.setCurrentRouteName=h?I(S,"routeName",void 0,n.K7.softNav):I(A,"routeName",!0,n.K7.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,a.p)(f.xV,["API/noticeError/called"],void 0,n.K7.metrics,x),(0,a.p)("err",[t,(0,v.t)(),!1,r,!!E[e]],void 0,n.K7.jserrors,x)},u.RI?(0,d.GG)((()=>P()),!0):P(),p}(e.agentIdentifier,x,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=k),I=!0}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>o,K7:()=>n,P3:()=>i});const n={ajax:"ajax",genericEvents:"generic_events",jserrors:"jserrors",logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.spa]:5,[n.ajax]:6,[n.sessionTrace]:7,[n.softNav]:8,[n.sessionReplay]:9,[n.logging]:10,[n.genericEvents]:11},o={[n.pageViewTiming]:"events",[n.ajax]:"events",[n.spa]:"events",[n.softNav]:"events",[n.metrics]:"jserrors",[n.jserrors]:"jserrors",[n.sessionTrace]:"browser/blobs",[n.sessionReplay]:"browser/blobs",[n.logging]:"browser/logs",[n.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({95:"nr-full-compressor",222:"nr-full-recorder",891:"nr-full"}[e]+"-1.274.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.274.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={891:"sha512-Sx2xJQrHp2m/Ngn/ZcfBCUwNr2Xy/C5urYtWpfm3bWpil4spXOQGTtNwIfF5HvPGioGASn9QTyE4Z+zC7r7wcg==",222:"sha512-hMte3OWgwwYeisSiD7WCIx/6tT16zLaPjag9uF4tIZp7ybOvrJKbeyzhe4fz1tDbkdcdOMm8dvgPPLBatSAGeA==",95:"sha512-MPaT9dkHv16XzwEUVZPyqpN1do/Er1XFAZoIAPYWylmv+iGIThqN+GwQq27pUyAX7sNXVJQVZezH96p53Ks3Pg=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},g=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={959:0,85:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,d=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.274.0.PROD"]=self["webpackChunk:NRBA-1.274.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(944),t=i(6344),r=i(9566);class n{agentIdentifier;constructor(e=(0,r.LA)(16)){this.agentIdentifier=e}#e(t,...r){if("function"==typeof this.api?.[t])return this.api[t](...r);(0,e.R)(35,t)}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}addRelease(e,t){return this.#e("addRelease",e,t)}log(e,t){return this.#e("log",e,t)}}class o extends n{#e(t,...r){if("function"==typeof this.api?.[t])return this.api[t](...r);(0,e.R)(35,t)}start(){return this.#e("start")}finished(e){return this.#e("finished",e)}recordReplay(){return this.#e(t.G4.RECORD)}pauseReplay(){return this.#e(t.G4.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}wrapLogger(e,t,r){return this.#e("wrapLogger",e,t,r)}}var a=i(860),s=i(9417);const c=Object.values(a.K7);function d(e){const t={};return c.forEach((r=>{t[r]=function(e,t){return!0===(0,s.gD)(t,"".concat(e,".enabled"))}(r,e)})),t}var u=i(425);var l=i(1687),f=i(4234),h=i(5289),g=i(6154),p=i(5270),m=i(7767),v=i(6389);class b extends f.W{constructor(e,t,r=!0){super(e.agentIdentifier,t),this.auto=r,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===e.init[this.featureName].autoStart&&(this.auto=!1),this.auto?(0,l.Ak)(e.agentIdentifier,t):this.ee.on("manual-start-all",(0,v.J)((()=>{(0,l.Ak)(e.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator(e)})))}importAggregator(t,r={}){if(this.featAggregate||!this.auto)return;let n;this.onAggregateImported=new Promise((e=>{n=e}));const o=async()=>{let o;try{if((0,m.V)(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(891).then(i.bind(i,6526));o=e(t)}}catch(t){(0,e.R)(20,t),this.ee.emit("internal-error",[t]),this.featureName===a.K7.sessionReplay&&this.abortHandler?.()}try{if(t.sharedAggregator)await t.sharedAggregator;else{t.sharedAggregator=i.e(891).then(i.bind(i,9337));const{EventAggregator:e}=await t.sharedAggregator;t.sharedAggregator=new e}if(!this.#t(this.featureName,o))return(0,l.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{lazyFeatureLoader:e}=await i.e(891).then(i.bind(i,6103)),{Aggregate:a}=await e(this.featureName,"aggregate");this.featAggregate=new a(t,r),n(!0)}catch(t){(0,e.R)(34,t),this.abortHandler?.(),(0,l.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};g.RI?(0,h.GG)((()=>o()),!0):o()}#t(e,t){switch(e){case a.K7.sessionReplay:return(0,p.SR)(this.agentIdentifier)&&!!t;case a.K7.sessionTrace:return!!t;default:return!0}}}var y=i(6630);class R extends b{static featureName=y.T;constructor(e,t=!0){super(e,y.T,t),this.importAggregator(e)}}var x=i(384);var w=i(9908),T=i(2843),A=i(3878),E=i(782),S=i(1863);class _ extends b{static featureName=E.T;constructor(e,t=!0){super(e,E.T,t),g.RI&&((0,T.u)((()=>(0,w.p)("docHidden",[(0,S.t)()],void 0,E.T,this.ee)),!0),(0,A.sp)("pagehide",(()=>(0,w.p)("winPagehide",[(0,S.t)()],void 0,E.T,this.ee))),this.importAggregator(e))}}var O=i(3969);class N extends b{static featureName=O.TZ;constructor(e,t=!0){super(e,O.TZ,t),this.importAggregator(e)}}var I=i(6774),P=i(3304);class j{constructor(e,t,r,n,i){this.name="UncaughtError",this.message="string"==typeof e?e:(0,P.A)(e),this.sourceURL=t,this.line=r,this.column=n,this.__newrelic=i}}function C(e){return D(e)?e:new j(void 0!==e?.message?e.message:e,e?.filename||e?.sourceURL,e?.lineno||e?.line,e?.colno||e?.col,e?.__newrelic)}function k(e){const t="Unhandled Promise Rejection";if(!e?.reason)return;if(D(e.reason))try{return e.reason.message=t+": "+e.reason.message,C(e.reason)}catch(t){return C(e.reason)}const r=C(e.reason);return r.message=t+": "+r?.message,r}function H(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new j(e.message,e.filename,e.lineno,e.colno,e.error.__newrelic);return t.name=SyntaxError.name,t}return D(e.error)?e.error:C(e)}function D(e){return e instanceof Error&&!!e.stack}class L extends b{static featureName=I.T;#r=!1;constructor(e,r=!0){super(e,I.T,r);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("internal-error",(e=>{this.abortHandler&&(0,w.p)("ierr",[C(e),(0,S.t)(),!0,{},this.#r],void 0,this.featureName,this.ee)})),this.ee.on(t.G4.REPLAY_RUNNING,(e=>{this.#r=e})),g.gm.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,w.p)("err",[k(e),(0,S.t)(),!1,{unhandledPromiseRejection:1},this.#r],void 0,this.featureName,this.ee)}),(0,A.jT)(!1,this.removeOnAbort?.signal)),g.gm.addEventListener("error",(e=>{this.abortHandler&&(0,w.p)("err",[H(e),(0,S.t)(),!1,{},this.#r],void 0,this.featureName,this.ee)}),(0,A.jT)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#n,this.importAggregator(e)}#n(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}var K=i(8990);let M=1;const U="nr@id";function V(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===g.gm?0:(0,K.I)(e,U,(function(){return M++}))}function G(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,P.A)(e).length}catch(e){return}}}var F=i(8139),B=i(7836),W=i(3434);const z={},q=["open","send"];function Z(t){var r=t||B.ee;const n=function(e){return(e||B.ee).get("xhr")}(r);if(z[n.debugId]++)return n;z[n.debugId]=1,(0,F.u)(r);var i=(0,W.YM)(n),o=g.gm.XMLHttpRequest,a=g.gm.MutationObserver,s=g.gm.Promise,c=g.gm.setInterval,d="readystatechange",u=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],l=[],f=g.gm.XMLHttpRequest=function(t){const r=new o(t),a=n.context(r);try{n.emit("new-xhr",[r],a),r.addEventListener(d,(s=a,function(){var e=this;e.readyState>3&&!s.resolved&&(s.resolved=!0,n.emit("xhr-resolved",[],e)),i.inPlace(e,u,"fn-",y)}),(0,A.jT)(!1))}catch(t){(0,e.R)(15,t);try{n.emit("internal-error",[t])}catch(e){}}var s;return r};function h(e,t){i.inPlace(t,["onreadystatechange"],"fn-",y)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,f),f.prototype=o.prototype,i.inPlace(f.prototype,q,"-xhr-",y),n.on("send-xhr-start",(function(e,t){h(e,t),function(e){l.push(e),a&&(p?p.then(b):c?c(b):(m=-m,v.data=m))}(t)})),n.on("open-xhr-start",h),a){var p=s&&s.resolve();if(!c&&!s){var m=1,v=document.createTextNode(m);new a(b).observe(v,{characterData:!0})}}else r.on("fn-end",(function(e){e[0]&&e[0].type===d||b()}));function b(){for(var e=0;e<l.length;e++)h(0,l[e]);l.length&&(l=[])}function y(e,t){return t}return n}var Y="fetch-",X=Y+"body-",Q=["arrayBuffer","blob","json","text","formData"],J=g.gm.Request,ee=g.gm.Response,te="prototype";const re={};function ne(e){const t=function(e){return(e||B.ee).get("fetch")}(e);if(!(J&&ee&&g.gm.fetch))return t;if(re[t.debugId]++)return t;function r(e,r,n){var i=e[r];"function"==typeof i&&(e[r]=function(){var e,r=[...arguments],o={};t.emit(n+"before-start",[r],o),o[B.P]&&o[B.P].dt&&(e=o[B.P].dt);var a=i.apply(this,r);return t.emit(n+"start",[r,e],a),a.then((function(e){return t.emit(n+"end",[null,e],a),e}),(function(e){throw t.emit(n+"end",[e],a),e}))})}return re[t.debugId]=1,Q.forEach((e=>{r(J[te],e,X),r(ee[te],e,X)})),r(g.gm,"fetch",Y),t.on(Y+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(Y+"done",[null,r],n)}else t.emit(Y+"done",[e],n)})),t}var ie=i(7485),oe=i(5603);class ae{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,oe.o)(this.agentIdentifier);if(!t)return null;var n=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!n||!i)return null;var a=(0,r.ZF)(),s=(0,r.el)(),c=Date.now(),d={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(d.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),d.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,n,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(d.newrelicHeader=this.generateTraceHeader(a,s,c,n,i,o)),d}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof g.gm?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,P.A)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,s.gD)(this.agentIdentifier,"distributed_tracing")&&(r=(0,s.D0)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var n=0;n<r.allowed_origins.length;n++){var i=(0,ie.D)(r.allowed_origins[n]);if(e.hostname===i.hostname&&e.protocol===i.protocol&&e.port===i.port){t=!0;break}}return t}isDtEnabled(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var se=i(9300),ce=i(7295),de=["load","error","abort","timeout"],ue=de.length,le=(0,x.dV)().o.REQ,fe=(0,x.dV)().o.XHR;class he extends b{static featureName=se.T;constructor(e,t=!0){super(e,se.T,t),this.dt=new ae(e.agentIdentifier),this.handler=(e,t,r,n)=>(0,w.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};g.gm?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const r={status:t.responseStatus},n={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};ge(r,t.name),this.handler("xhr",[r,n,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,a.K7.ajax)}}))}catch(e){}ne(this.ee),Z(this.ee),function(e,t,r,n){function i(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){T(t,e)}),(0,A.jT)(!1)),g.lR||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,A.jT)(!1))}function o(e){this.params={method:e[0]},ge(this,e[1]),this.metrics={}}function s(t,r){e.loader_config.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",e.loader_config.xpid);var i=n.generateTracePayload(this.parsedOrigin);if(i){var o=!1;i.newrelicHeader&&(r.setRequestHeader("newrelic",i.newrelicHeader),o=!0),i.traceContextParentHeader&&(r.setRequestHeader("traceparent",i.traceContextParentHeader),i.traceContextStateHeader&&r.setRequestHeader("tracestate",i.traceContextStateHeader),o=!0),o&&(this.dt=i)}}function c(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=G(i);a&&(n.txSize=a)}this.startTime=(0,S.t)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<ue;s++)r.addEventListener(de[s],this.listener,(0,A.jT)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function u(e,t){var r=""+V(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function l(e,t){var r=""+V(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function f(){this.endTime=(0,S.t)()}function h(e,r){r instanceof fe&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function p(e,r){r instanceof fe&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function m(e,t,r){t instanceof fe&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,S.t)()))}function v(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,S.t)()-this.xhrCbStart,this.onload,r],r)}function b(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&g.RI&&(t=""+g.gm.location.href):e[0]&&e[0].url?t=e[0].url:g.gm?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,ie.D)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=n.generateTracePayload(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,i)&&(this.dt=i);else{var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),s(o.headers,i)&&(this.dt=i),e.length>1?e[1]=o:e.push(o)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function y(e,t){this.params={},this.metrics={},this.startTime=(0,S.t)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof le?r=i.url:g.gm?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),ge(this,r);var o=(""+(i&&i instanceof le&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=G(n.body)||0}function R(e,t){if(this.endTime=(0,S.t)(),this.params||(this.params={}),(0,ce.iW)(this.params))return;let n;this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);const i={txSize:this.txSize,rxSize:n,duration:(0,S.t)()-this.startTime};r("xhr",[this.params,i,this.startTime,this.endTime,"fetch"],this,a.K7.ajax)}function x(e){const t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(let t=0;t<ue;t++)e.removeEventListener(de[t],this.listener,!1);t.aborted||(0,ce.iW)(t)||(n.duration=(0,S.t)()-this.startTime,this.loadCazptureCalled||4!==e.readyState?null==t.status&&(t.status=0):T(this,e),n.cbTime=this.cbTime,r("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,a.K7.ajax))}}function T(e,r){e.params.status=r.status;var n=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?G(e.response):"text"===r||""===r||void 0===r?G(e.responseText):void 0}(r,e.lastSize);if(n&&(e.metrics.rxSize=n),e.sameOrigin){var i=r.getResponseHeader("X-NewRelic-App-Data");i&&((0,w.p)(O.rs,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,a.K7.metrics,t),e.params.cat=i.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",i),t.on("open-xhr-start",o),t.on("open-xhr-end",s),t.on("send-xhr-start",c),t.on("xhr-cb-time",d),t.on("xhr-load-added",u),t.on("xhr-load-removed",l),t.on("xhr-resolved",f),t.on("addEventListener-end",h),t.on("removeEventListener-end",p),t.on("fn-end",v),t.on("fetch-before-start",b),t.on("fetch-start",y),t.on("fn-start",m),t.on("fetch-done",R)}(e,this.ee,this.handler,this.dt),this.importAggregator(e)}}function ge(e,t){var r=(0,ie.D)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}const pe={},me=["pushState","replaceState"];function ve(e){const t=function(e){return(e||B.ee).get("history")}(e);return!g.RI||pe[t.debugId]++||(pe[t.debugId]=1,(0,W.YM)(t).inPlace(window.history,me,"-")),t}var be=i(3738);const{He:ye,bD:Re,d3:xe,Kp:we,TZ:Te,Lc:Ae,uP:Ee,Rz:Se}=be;class _e extends b{static featureName=Te;constructor(e,t=!0){super(e,Te,t);if(!(0,m.V)(this.agentIdentifier))return void this.deregisterDrain();const r=this.ee;let n;ve(r),this.eventsEE=(0,F.u)(r),this.eventsEE.on(Ee,(function(e,t){this.bstStart=(0,S.t)()})),this.eventsEE.on(Ae,(function(e,t){(0,w.p)("bst",[e[0],t,this.bstStart,(0,S.t)()],void 0,a.K7.sessionTrace,r)})),r.on(Se+xe,(function(e){this.time=(0,S.t)(),this.startPath=location.pathname+location.hash})),r.on(Se+we,(function(e){(0,w.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,a.K7.sessionTrace,r)}));try{n=new PerformanceObserver((e=>{const t=e.getEntries();(0,w.p)(ye,[t],void 0,a.K7.sessionTrace,r)})),n.observe({type:Re,buffered:!0})}catch(e){}this.importAggregator(e,{resourceObserver:n})}}var Oe=i(2614);class Ne extends b{static featureName=t.TZ;#i;#o;constructor(e,r=!0){let n;super(e,t.TZ,r),this.replayRunning=!1,this.#o=e;try{n=JSON.parse(localStorage.getItem("".concat(Oe.H3,"_").concat(Oe.uh)))}catch(e){}(0,p.SR)(e.agentIdentifier)&&this.ee.on(t.G4.RECORD,(()=>this.#a())),this.#s(n)?(this.#i=n?.sessionReplayMode,this.#c()):this.importAggregator(e),this.ee.on("err",(e=>{this.replayRunning&&(this.errorNoticed=!0,(0,w.p)(t.G4.ERROR_DURING_REPLAY,[e],void 0,this.featureName,this.ee))})),this.ee.on(t.G4.REPLAY_RUNNING,(e=>{this.replayRunning=e}))}#s(e){return e&&(e.sessionReplayMode===Oe.g.FULL||e.sessionReplayMode===Oe.g.ERROR)||(0,p.Aw)(this.agentIdentifier)}#d=!1;async#c(e){if(!this.#d){this.#d=!0;try{const{Recorder:t}=await Promise.all([i.e(891),i.e(222)]).then(i.bind(i,8589));this.recorder??=new t({mode:this.#i,agentIdentifier:this.agentIdentifier,trigger:e,ee:this.ee}),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording}catch(e){}this.importAggregator(this.#o,{recorder:this.recorder,errorNoticed:this.errorNoticed})}}#a(){this.featAggregate?this.featAggregate.mode!==Oe.g.FULL&&this.featAggregate.initializeRecording(Oe.g.FULL,!0):(this.#i=Oe.g.FULL,this.#c(t.Qb.API),this.recorder&&this.recorder.parent.mode!==Oe.g.FULL&&(this.recorder.parent.mode=Oe.g.FULL,this.recorder.stopRecording(),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording))}}var Ie=i(3333);class Pe extends b{static featureName=Ie.TZ;constructor(e,t=!0){super(e,Ie.TZ,t);const r=[e.init.page_action.enabled,e.init.performance.capture_marks,e.init.performance.capture_measures,e.init.user_actions.enabled];g.RI&&e.init.user_actions.enabled&&(Ie.Zp.forEach((e=>(0,A.sp)(e,(e=>(0,w.p)("ua",[e],void 0,this.featureName,this.ee)),!0))),Ie.qN.forEach((e=>(0,A.sp)(e,(e=>(0,w.p)("ua",[e],void 0,this.featureName,this.ee)))))),r.some((e=>e))?this.importAggregator(e):this.deregisterDrain()}}var je=i(993),Ce=i(3785);class ke extends b{static featureName=je.TZ;constructor(e,t=!0){super(e,je.TZ,t);const r=this.ee;this.ee.on("wrap-logger-end",(function([e]){const{level:t,customAttributes:n}=this;(0,Ce.R)(r,e,n,t)})),this.importAggregator(e)}}new class extends o{constructor(t,r){super(r),g.gm?(this.features={},(0,x.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(R),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===a.K7.softNav)),(0,u.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=d(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>a.P3[e.featureName]-a.P3[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==a.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===a.K7.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===a.K7.softNav)return;const n=function(e){switch(e){case a.K7.ajax:return[a.K7.jserrors];case a.K7.sessionTrace:return[a.K7.ajax,a.K7.pageViewEvent];case a.K7.sessionReplay:return[a.K7.sessionTrace];case a.K7.pageViewTiming:return[a.K7.pageViewEvent];default:return[]}}(r.featureName).filter((e=>!(e in this.features)));n.length>0&&(0,e.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)}))}catch(t){(0,e.R)(22,t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.Zm)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[R,_,_e,Ne,he,N,L,Pe,ke],loaderType:"pro"})})()})();</script>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="csrf-token" content="eI9KxdFybEjSqjEzi8a4xU6moJyNaJXoHNy2L2EI" />
+            <title>Million Dollar Sweepstakes with bonus from PCH | PCH.com</title>
+        <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="1-million-plus-bonus-sweeps-monetized" />
+    <link rel="stylesheet" type="text/css" href="../../common/common-desktop05a17164f6bd128021fc.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css"
+        integrity="sha256-CfN2r6i/dqkUHVRqpBzO3w21SnIWalwGfj5ScBPVzmI=" crossorigin="anonymous">
+    <script src="https://cdn.pch.com/ui/shared/js/ccpa_sp_head.js"></script>
+        <meta name="keywords" content="win a free bonus, million dollar sweepstakes, win a million dollars now, win money for free" />
+    <meta name="description" content="What&#039;s better than winning 1 million dollars? Getting 1 million dollars plus a bonus! PCH gives you the opportunity to win up to $50,000 more. Enter today!"/>
+        <link rel="stylesheet" type="text/css" href="../../sections/sweepstakes/category91d3ded091e4f703c93c.css"/>
+        <link rel="stylesheet" href="https://sc.pch.com/uninav/dist/v3/css/PCHUniversalNavigation.min.css?v=1.1.1">
+
+<script src="https://pchassets.pch.com/sites/global/pch-events/latest/pch-events.min.js" async></script>
+
+<script src="https://cdn-imageconv.pchassets.com/spectrum/js/greenSock/v3.4.0/CustomEase.min.js"></script>
+<script src="https://cdn-imageconv.pchassets.com/spectrum/js/greenSock/v3.4.0/SplitText.min.js"></script>
+
+
+<script type="text/javascript">
+window = {};
+(function (context) {
+context["utag_data"] = {"page_name":"sweepstakes\/million-dollar-sweeps\/1-million-plus-bonus-sweeps-monetized","device_type":"DESKTOP","property_name":"PCHCOMNEW","GMT":"","login_status":0,"user_level":"","user_title":"","user_first_name":"PCH User","user_last_name":"","user_age":"","age_range":"","user_state":"","property_membership":[],"segment_membership":[],"user_gender":"","user_gender_int":0,"date_of_birth":"","user_address1":"","user_address2":"","user_city":"","user_zip":"","user_email_hash":"","first_ever_reg_date":"","oat":"","gmt":"888e2e00-a8c7-4402-a011-d5fbe1b19a6c","dns":1,"encsso":"","vip_level":"none","AD_ID":{"lr":null,"ep":null,"yc":null,"amzn":null,"td":null},"dnc":1,"stream_number":0,"subscriber_random_id_a":0,"subscriber_random_id_b":0,"gpt_page_type":"sweepstakes-landing","adomik_switch_off":0,"openx_header_bidding_switch_off":0,"criteo_switch_off":0,"krux_pixel_switch_off":0,"neustar_switch_off":0,"liveramp_smart_reach_switch_off":0,"liveramp_data_ingestion_switch_off":0,"tradedesk_pixel_switch_off":0,"new_comscore_switch_off":0,"hb_response_time_switch_off":0,"ie_8_9_10_browser_detect_switch_off":0,"app_nexus_switch_off":0,"ga_switch_off":0,"evergage_switch_off":0,"forensiq_conversion_switch_off":0,"forensiq_landing_switch_off":0,"tealium_collect_switch":0,"ispot_tv_switch_off":0,"experian_switch_off":0,"gpt_switch_off":0,"source_category":"organic","pch_source":"organic","online_experience_code":"","int_pref":[]}
+context["tokenCenterOptions"] = {"view":"2","errorText":"Loading...","nameLimit":15,"autoTime":3000,"handler":"\/tokencenter\/","lastActivity":{"text":"Earn 25,000 Tokens, when you complete registration!"}}
+context["PCH"] = {"env":"prod","sitecode":"PCHCOM","registrationUrl":"https:\/\/accounts.pch.com\/register?adt=cO0X950JxKyE12A3k8NqsHnAStL0DDGQuN00uzPUqe0BmOi8vqe3qeaY3nwOw5P02o3piMyqemOKSTqeKMeoiZfyJyTovoiox1fk2VKL3pgMyqemOKRmYJogofyiyT1voUojYmIiWJIaoKYmM3AjIJ1lp2ogqey56yTDJM","registrationAlias":"registration","ssoui":"desktop"}
+context["PCHUSER"] = {"type":0,"title":"","age":"0","gender":"","gmt":"","oat":"","level":"","fullname":"","firstName":"","lastName":"","messageName":" .","segments":"","seglist":[],"reglist":[],"optins":[],"registrations":"","isMiniReg":false,"isSocialReg":false,"firstRegDate":"","isFullyRegistered":false,"isRecognizedUser":false,"availableTokens":0,"hasRewardsSpin":false,"hasLevelUp":false,"totalTokens":0,"tokenLevel":"","createPasswordTokens":25000,"createPasswordMemberStatus":"silver"}
+context["TokenCenter"] = []
+context["isFullyRegisteredUser"] = false
+context["isTokenAward"] = true
+context["isDesktop"] = true
+context["isTablet"] = false
+context["isMobile"] = false
+context["csrfToken"] = 'eI9KxdFybEjSqjEzi8a4xU6moJyNaJXoHNy2L2EI'
+context["UUID"] = 0
+context["secure_url"] = '/user'
+context["level_up_url"] = null
+context["createPasswordUrl"] = 'https://accounts.pch.com/register?adt=cDpp5cA2kMdTSnWIk6JE1aQctLUqebpjEibmqe3Ylqe3Lj5ht292LNNgDDSQu000G'
+})(window);
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) { 
+  const prequalSurvey = document.querySelector('#survey_prequal .survey-card__content__btn');
+if(prequalSurvey){
+document.querySelector('#survey_prequal .survey-card__content__btn').href = document.querySelector('#survey_prequal .survey-card__content__btn').href.replace('{gmt}',PCHUSER.gmt)
+}
+
+});
+</script>
+
+<style>
+.device-desktop #carousel{
+    min-height:583px;
+}
+</style>
+
+<style>
+  .optin-box__content {
+    -webkit-backface-visibility: hidden;
+  }
+</style>
+
+<style>
+  .device-mobile .sweep-gameplay__container__game-box{
+    position: relative;
+  }
+</style>
+
+<style>
+/*
+* removing DNS for New Mobile Exp
+*/
+main .september-tv footer a.do-not-sell {
+  display: none;
+}
+
+</style>
+
+<script>
+if (utag_data && window.location.href === 'https://www.pch.com/sweepstakes/lifestyle/gameplay/noon-sweeps') {
+   utag_data.ap = "sk_nm"
+}
+</script>
+
+<script>
+    (function () {
+        if (window.location.href.indexOf("quizzes/quizoftheday") > -1) {
+            window.utag_data = window.utag_data || {};
+            utag_data.gpt_page_type = "quiz";
+        }
+    })();
+</script>
+
+
+<script type="text/javascript">
+    window.PCHEvents = window.PCHEvents || {};
+    window.PCHEvents.cmd = window.PCHEvents.cmd || [];
+
+    if (typeof Object.assign != 'function') {
+        Object.assign = function (target, varArgs) { // .length of function is 2
+            'use strict';
+            if (target == null) { // TypeError if undefined or null
+                throw new TypeError('Cannot convert undefined or null to object');
+            }
+            var to = Object(target);
+            for (var index = 1; index < arguments.length; index++) {
+                var nextSource = arguments[index];
+                if (nextSource != null) { // Skip over if undefined or null
+                    for (var nextKey in nextSource) {
+                        // Avoid bugs when hasOwnProperty is shadowed
+                        if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+                            to[nextKey] = nextSource[nextKey];
+                        }
+                    }
+                }
+            }
+            return to;
+        };
+    }
+    window.PCH = window.PCH || {};
+    window.PCHUSER = window.PCHUSER || {};
+    // this will come from uninav data
+    //window.PCHUSER.createPasswordTokens = "1000";
+    window.utag_data.hasPii = 0;
+window.PCHUSER.state = '';
+    window.PCHUSER.refreshCtr = 1;
+        window.utag_data.gpt_tag_id = [41];
+        window.PCHUSER.ageRange = '';
+    window.TokenCenter = window.TokenCenter || {};
+
+    PCH.uniExp = PCH.uniExp || {};
+    PCH.uniExp.tokenCenterOptions = window.tokenCenterOptions;
+        PCH.uniExp.tokenCenterOptions.autoUpdate = true;
+            PCH.vip = PCH.vip || {};
+    
+        PCH.vip.config = Object.assign({
+        config_url: "//sc.pch.com/vip/config.json",
+        exec_mode: "manual",
+        badge_target: ".uninav .uninav__logoholder",
+        create_pass_target: window.createPasswordUrl,
+        display_mode: "pop-over",
+        alert_auto_close: 10,
+        alert_enabled: Boolean(false),
+        device_type: "DESKTOP",
+        site_id: "pchcom"
+    }, PCH.vip.config || {});
+</script>
+
+    <script>
+        PCH.vip.status = {"act":0,"level":0,"badge":0,"other":[],"alert":0};
+    </script>
+
+<!-- ga proxy script -->
+<script type="module">
+    import GaProxy from 'https://cdn.pch.com/ui/shared/ga_proxy/latest/GaProxy.min.js';
+            
+    window.PCH = window.PCH || {};        
+    window.PCH.GaProxy = new GaProxy(document.body, window?.utag);
+    console.log("GaProxy initialized", window.PCH.GaProxy);        
+</script>
+
+
+
+
+
+
+<script type='text/javascript' src='../../vendor/tealium/js/tealium.js'></script><script type='text/javascript' src='https://tags.tiqcdn.com/utag/pch/pchcomnew/prod/utag.js'></script>
+
+            <script type="text/javascript" src="../../vendor/googleanalytics/js/googleanalytics.js"></script>
+            <script type="text/javascript">
+
+                PCHGA = new PCHGA('PCHCOM', 'DESKTOP', 'sweepstakes/million-dollar-sweeps/1-million-plus-bonus-sweeps-monetized','https://www.pch.com/sweepstakes/million-dollar-sweeps/1-million-plus-bonus-sweeps-monetized');
+                            </script>
+
+    
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="ZZ3H9-H7ZNT-Y5QCD-KAAER-U7LC5",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"ZZ3H9-H7ZNT-Y5QCD-KAAER-U7LC5",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="rcicheaxhqalqz2iimya-f-68d79700e-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"39","ak.cp":"91187","ak.ai":parseInt("241187",10),"ak.ol":"0","ak.cr":1,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"330e7019","ak.r":43333,"ak.a2":e,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"136.144.35.0","ak.cport":37127,"ak.gh":"23.216.133.20","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1732789040","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==oA8+BPTo5wuaFDqbIOgwQyvjgUP50PUOsNy/3soqEes3JYBEGASjqhaNLfR3VA/zifT/CcjkBOJFvfS7qm6bc+jJ7gn/FQNKnD4M1lbmj1lMm5hV1fdiRcZHGfva2Yq7V5HW59DaruAbiTHSGyvNydAH9M97le9bQlR/NNW97TWFnKJ8dTcyeQN1cnMyJYsKMMc1EDJEjGzE/iqAJmxEcaWIS1VBdW3Jt+DddjQFqI8lAKYIimj0NrLvk9D7/Wf+g4EEiCZPSjmJSflGqrwvv1S2oNfXa9bvtIlzIZhQsHoraaDtHtGwu1gUnrZS+w7ux8dI/2UoNoVn5PssB8WkVKl+iNhdz27HtfqIa7qFpw3SfElz8/gvtv/FavH5N5JmbBkrx+mVP/LAlciLzIIEBKmag29vgZmIQmhmnOZqfrQ=","ak.pv":"204","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+
+<body class="device-desktop sweepstakes-landing">
+    
+    <a id="ada-accessibility-statement" target="_new" tabindex="0" href="https://privacy.pch.com/accessibility"
+        style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">Accessibility
+        Statement</a>
+
+    <div id="evergageCustomBanner"></div>
+    <style>
+    /* adding some spacing below the nav on these sites removing the site navs */
+    .uninav.uninav--site-PCHCOM {
+        margin-bottom: 40px;
+    }
+</style>
+
+<div class="uninav uninav--site-PCHCOM uninav--unrecognized uninav--nopass">
+
+    <a name="uni-nav-anchor"></a>
+
+    <!-- top-bar -->
+<div class="uninav__top-bar">
+    <div class="uninav__top-bar__content">
+        
+        <ul class="uninav__top-bar__links">
+                                </ul>
+
+    </div>
+</div>
+<!-- end top-bar -->
+
+
+    <div class="uninav__mainbar">
+    <div class="uninav__burger"
+         data-ga-tealium_event="hamburger_menu_click"
+         data-ga-event-once
+         data-ga-click_name="hamburger menu"
+         data-ga-click_location="header"
+         aria-label="hamburger menu">
+        <div class="uninav__burger__line uninav__burger__line--top">
+            <div class="uninav__burger__line-inner uninav__burger__line-inner--top"></div>
+        </div>
+        <div class="uninav__burger__line uninav__burger__line--mid">
+            <div class="uninav__burger__line-inner uninav__burger__line-inner--mid"></div>
+        </div>
+        <div class="uninav__burger__line uninav__burger__line--bot">
+            <div class="uninav__burger__line-inner uninav__burger__line-inner--bot"></div>
+        </div>
+    </div>
+
+            <!-- unrecognized -->
+    <nav class="uninav__components uninav__unrecognized">
+        <ul class="uninav__components-list">
+            <li>
+                <a href="https://accounts.pch.com/login?adt=cO0X950JxKyE12A3k8NqsHnAStL0DDGQuN00uzPUqe0BmOi8vqe3qeaY3nwOw5P02o3piMyqemOKSTqeKMeoiZfyJyTovoiox1fk2VKL3pgMyqemOKRmYJogofyiyT1voUojYmIiWJIaoKYmM3AjIJ1lp2ogqey56yTDJM"
+                   data-ga-tealium_event="sign_in_initiated"
+                   data-ga-click_name="sign in"
+                   data-ga-click_location="header" 
+                   class="uninav__sign-in uninav__button link-button">Sign In</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end unrecognized -->
+        
+    <a href="../../pchvip"
+   title="PCH.com"
+   data-ga-tealium_event="PCHCOM_logo_click"
+   data-ga-click_name="PCHCOM logo"
+   data-ga-click_location="header"
+   class="uninav__logo" style="background-image: url('https://sc.pch.com/uninav/dist/v3/images/uninav/logos/pchcom.png')">
+    PCH.com
+</a>
+    
+    <div class="uninav__message-center uninav__dropdown">
+    <div class="uninav__msg-container uninav__msg-container--dropdown uninav__dropdown__content">
+
+    </div>
+</div>
+    
+    
+    
+    <div class="uninav__profile-dropdown">
+        <nav class="uninav-nav__profile">
+            <ul class="">
+                 
+                    <li class="">
+                        <a class=""
+                           data-ga-tealium_event="my_account_click"
+                           data-ga-click_name="my account"
+                           data-ga-click_location="my account" 
+                           href="https://accounts.pch.com/my-account?app=PCHCOM&r=https://www.pch.com/sweepstakes/million-dollar-sweeps/1-million-plus-bonus-sweeps-monetized">MY ACCOUNT</a>
+                    </li>
+                 
+                    <li class="">
+                        <a class=""
+                           data-ga-tealium_event="profile_builder_click"
+                           data-ga-click_name="profile builder"
+                           data-ga-click_location="my account" 
+                           href="https://survey.pch.com/profile">PCH PROFILE BUILDER</a>
+                    </li>
+                 
+                    <li class="">
+                        <a class=""
+                           data-ga-tealium_event="sign_out_click"
+                           data-ga-click_name="sign out"
+                           data-ga-click_location="my account" 
+                           href="https://accounts.pch.com/logout?adt=cO0X950JxKyE12A3k8NqsHnAStL0DDGQuN00uzPUqe0BmOi8vqe3qeaY3nwOw5P02o3piMyqemOKSTqeKMeoiZfyJyTovoiox1fk2VKL3pgMyqemOKRmYJogofyiyT1voUojYmIiWJIaoKYmM3AjIJ1lp2ogqey56yTDJM">SIGN OUT</a>
+                    </li>
+                            </ul>
+        </nav>
+    </div>
+    
+</div>
+
+    <div class="uninav-nav">
+            <nav class="uninav-nav__menu uninav-nav__menu--site-nav">
+        <ul class="uninav-nav__menulist">
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="rewards"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Rewards</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="rewards_featured"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com">Featured</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="rewards_weekly grand prize"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/prizes/weekly-grand-prize">Weekly Grand Prize</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="rewards_cash gift cards"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/prizes/cash-gift-cards">Cash Gift Cards</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="rewards_electronics"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/prizes/electronics">Electronics</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="rewards_lifestyle"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/prizes/lifestyle">Lifestyle</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="rewards_home garden"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/prizes/home-garden">Home Garden</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="sweepstakes"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Sweepstakes</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_all pch sweepstakes"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../all-pch-sweeps">All PCH Sweepstakes</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_daily play"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../pchvip">Daily Play</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_superprize"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/superprize">Superprize</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_weekly grand prize"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/weekly-grand-prize">Weekly Grand Prize</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_vip exclusives"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../pchvip">VIP Exclusives</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_other sweepstakes"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://www.pch.com/sweepstakes">Other Sweepstakes</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="games"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Games</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_all pch games"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../games">All PCH Games</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_minute mania"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../games/minute-mania">Minute Mania</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_cards/solitaire"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../games/cards-solitaire">Cards/Solitaire</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_matching/mahjongg"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../games/matching">Matching/Mahjongg</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_word"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../games/word">Word</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_quizzes"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../quizzes">Quizzes</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_slots"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../slots">Slots</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="instant win"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Instant Win</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="instant win_scratch offs"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../scratchoffs">Scratch Offs</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="instant win_instant win games"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../instantwin">Instant Win Games</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="answer&amp;win"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Answer&amp;Win</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="answer&amp;win_online surveys"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://survey.pch.com/pchsurveys">Online Surveys</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="answer&amp;win_profile builder"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://survey.pch.com/profile">Profile Builder</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="other sites"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Other Sites</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="other sites_pch search &amp; win"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://search.pch.com/search2">PCH Search &amp; Win</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="other sites_pch lotto"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://lotto.pch.com/onboarding">PCH Lotto</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="other sites_pch frontpage"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://frontpage.pch.com/">PCH Frontpage</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem ">
+                    <a class="uninav-nav__menulink"
+                                                  href="../../winners"
+                       data-ga-tealium_event="uninav_l1_click"
+                       
+                       
+                       data-ga-click_name="winners"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Winners</a>
+                                    </li>
+                    </ul>
+    </nav>
+        
+    </div>
+</div>
+    
+    <div class="container">
+                        
+        <div class="row">
+            <div class="placement-content">
+                        </div>
+           
+            <main id="mainContent" class="col-sm-8">
+                            
+                    <section class="sweepstakes-main-container">
+
+        <div class="placement-content">
+            <div id="div-pch-gpt-placement-top"></div>
+        </div>
+
+                    <nav class="sweepstakes__nav sweepstakes__nav--top">
+    <div class="sweepstakes__nav__paddle left">
+        <svg id="paddle-left" viewBox="0 0 57.99 93.94"><path d="M412.76,112a11,11,0,0,0,3.23,7.79l35.95,35.95a11,11,0,1,0,15.58-15.58L439.36,112l28.16-28.17a11,11,0,1,0-15.58-15.57L416,104.2A11,11,0,0,0,412.76,112Z" transform="translate(-412.76 -65.02)"/></svg>
+    </div>
+    <div class="navbar sweepstakes__nav__wrapper">
+        <div class="sweepstakes__nav__category-list">
+                        <a href="../all-pch-sweeps" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon all-pch-sweeps"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">All PCH Sweeps</div>
+                </div>     
+            </a>
+                        <a href="../financial-freedom" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon financial-freedom"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Financial Freedom</div>
+                </div>     
+            </a>
+                        <a href="../lifestyle" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon lifestyle"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Lifestyle</div>
+                </div>     
+            </a>
+                        <a href="../million-dollar-sweeps" class="sweepstakes__nav__category-list__item active">
+                <div class="sweepstakes__nav__category-list__item__icon million-dollar-sweeps"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Million Dollar</div>
+                </div>     
+            </a>
+                        <a href="../cash-is-king" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon cash-is-king"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Cash Is King</div>
+                </div>     
+            </a>
+                        <a href="../pets" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon pets"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Pet Sweeps</div>
+                </div>     
+            </a>
+                        <a href="../home-makeover" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon home-makeover"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Makeover</div>
+                </div>     
+            </a>
+                        <a href="../win-for-life" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon win-for-life"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Win For Life</div>
+                </div>     
+            </a>
+                        <a href="../dream-home" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon dream-home"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Dream Home</div>
+                </div>     
+            </a>
+                        <a href="../grocery-food" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon grocery-food"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Grocery &amp; Food</div>
+                </div>     
+            </a>
+                        <a href="../travel-vacation" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon travel-vacation"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Travel &amp; Vacation</div>
+                </div>     
+            </a>
+                        <a href="../car-truck" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon car-truck"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Car &amp; Truck</div>
+                </div>     
+            </a>
+                        <a href="../sweeps-games" class="sweepstakes__nav__category-list__item ">
+                <div class="sweepstakes__nav__category-list__item__icon sweeps-games"></div>
+                <div class="sweepstakes__nav__category-list__item__name">
+                    <div class="text">Sweeps Games</div>
+                </div>     
+            </a>
+                    </div>
+    </div>
+    <div class="sweepstakes__nav__paddle right">
+        <svg id="paddle-right" viewBox="0 0 57.99 93.94"><path d="M470.75,112a11,11,0,0,0-3.23-7.79L431.57,68.25A11,11,0,1,0,416,83.82L444.16,112,416,140.15a11,11,0,1,0,15.58,15.58l35.95-35.95A11,11,0,0,0,470.75,112Z" transform="translate(-412.76 -65.02)"/></svg>
+    </div>
+</nav>        
+                    
+            
+            <div class="sweepstakes__featured">
+                <div class="sweepstakes__featured__slide " style="background-color: #128ce2;" onClick="">
+                    <a href="../../sweepstakes-play/1-million-plus-bonus" tabIndex="0">
+                        <img class="sweepstakes__featured__slide__image" src="https://pchcomassets.pch.com/images/453/1mmbonuspeelstmfeatsubf-415x275000000.png" alt="$1 Million Plus Bonus Sweepstakes" loading="lazy">
+                        <div class="sweepstakes__featured__slide__info">
+                                                            <h1 class="sweepstakes__featured__slide__info__title">Win $1 Million Plus Up To $50,000.00 Bonus Cash!</h1>
+                                <h2 class="sweepstakes__featured__slide__info__subtitle">Reveal the bonus prize!</h2>
+                                                        <div class="sweepstakes__featured__slide__info__description">
+                                <p>What’s better than winning $1 million dollars for free? Getting $1 million dollars plus a big bonus! Just pick one of 3 options and you’ll get a shot at $1,000,000.00 plus a surprise bonus – up to $50,000 cash! Go for it now!</p>
+                            </div>
+                            <button class="btn btn-lg enter ">
+                                <div class="btn__txt">
+                                    
+                                    <span class="btn__txt--bottom">Enter</span>
+                                    <div class="sweepstakes__featured__slide__info__gwy">gwy. no. 22000, 21001</div>
+                                </div>
+                                <div class="btn__bell"></div>
+                            </button>
+                            <button class="btn btn-lg played" disabled>
+                                <span class="btn__txt">    Completed
+                                    <div class="sweepstakes__featured__slide__info__gwy">gwy. no. 22000, 21001</div>
+                                </span>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+                    <section class="sweepstakes__more-sweepstakes">
+                <div class="placement-content">
+                    <div id="div-pch-gpt-placement-mid" class="div-pch-gpt-placement-mid"></div>
+                </div>
+                                    <h3 class="sweepstakes__section-header">Related Sweepstakes</h3>
+                
+
+                <div class="sweepstakes__card-container">
+                                                                
+                        <div class="sweepstakes-card sweepstakes-card--x1 ">
+                            <a href="secret-number-reveal-sweeps-monetized">
+                                <div class="sweepstakes-card__top">
+                                    <img class="sweepstakes-card__image" src="https://pchcomassets.pch.com/images/518/mysteryprizecodestmfeatsubf-415x275000000.png" alt="Secret Number Reveal  Sweepstakes" loading="lazy">
+                                    <div class="sweepstakes-card__completed-overlay">
+                                        <div class="completed-icon"></div>
+                                    </div>
+                                </div>
+                                <h2 class="sweepstakes-card__title">Win Up To $1,000,000.00</h2>
+                                <div class="sweepstakes-card__action">
+                                    <p class="sweepstakes-card__action__description">We just love making winners at PCH and this time you could win an incredible $500,000.00… $750,000.00… or even a millionaire-making fortune! Keep going to claim your Prize Pass and reveal your mystery prize code now!</p>
+                                    <button class="btn-green btn btn-lg enter ">
+                                        <div class="btn__txt">
+                                            
+                                            <span class="btn__txt--bottom">Enter</span>
+                                            <div class="sweepstakes-card__gwy">gwy. no. 22000</div>
+                                            
+                                        </div>
+                                        <div class="btn__bell"></div>
+
+                                    </button>
+                                    <button class="btn-green btn btn-lg played" disabled>
+                                        <span class="btn__txt">
+                                            Completed
+                                            <div class="sweepstakes-card__gwy">gwy. no. 22000</div>
+                                        </span>
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+
+                                                                    
+                        <div class="sweepstakes-card sweepstakes-card--x1 ">
+                            <a href="directions">
+                                <div class="sweepstakes-card__top">
+                                    <img class="sweepstakes-card__image" src="https://pchcomassets.pch.com/images/643/directions1mmstmfeatsubf-415x275000000-nodanielle.png" alt="Jackpot At Stake Sweepstakes" loading="lazy">
+                                    <div class="sweepstakes-card__completed-overlay">
+                                        <div class="completed-icon"></div>
+                                    </div>
+                                </div>
+                                <h2 class="sweepstakes-card__title">$1,000,000.00 Jackpot at Stake</h2>
+                                <div class="sweepstakes-card__action">
+                                    <p class="sweepstakes-card__action__description">It’s official – the Prize Patrol is prepared to award a big check and, with a $1 Million Dollar prize at stake, now is not the time to miss out! Claim your free entry to win this real money prize now.</p>
+                                    <button class="btn-green btn btn-lg enter ">
+                                        <div class="btn__txt">
+                                            
+                                            <span class="btn__txt--bottom">Enter</span>
+                                            <div class="sweepstakes-card__gwy">gwy. no. 22000</div>
+                                            
+                                        </div>
+                                        <div class="btn__bell"></div>
+
+                                    </button>
+                                    <button class="btn-green btn btn-lg played" disabled>
+                                        <span class="btn__txt">
+                                            Completed
+                                            <div class="sweepstakes-card__gwy">gwy. no. 22000</div>
+                                        </span>
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+
+                                                                    
+                        <div class="sweepstakes-card sweepstakes-card--x1 ">
+                            <a href="1mm-money-drop-sweeps-monetized">
+                                <div class="sweepstakes-card__top">
+                                    <img class="sweepstakes-card__image" src="https://pchcomassets.pch.com/images/567/moneydropstmfeatsubf-415x275000000r.png" alt="$1,000,000.00 Money Drop" loading="lazy">
+                                    <div class="sweepstakes-card__completed-overlay">
+                                        <div class="completed-icon"></div>
+                                    </div>
+                                </div>
+                                <h2 class="sweepstakes-card__title">Money Drop! Win Up to $1,000,000.00!</h2>
+                                <div class="sweepstakes-card__action">
+                                    <p class="sweepstakes-card__action__description">PCH is giving you the opportunity to win money online – up to $1 million dollars – with the fun, free Money Drop game! Just catch up to 10 money bags in 3 destinations and you could win the maximum prize amount! Get started now!</p>
+                                    <button class="btn-green btn btn-lg enter ">
+                                        <div class="btn__txt">
+                                            
+                                            <span class="btn__txt--bottom">Enter</span>
+                                            <div class="sweepstakes-card__gwy">gwy. no. 22000, 21001</div>
+                                            
+                                        </div>
+                                        <div class="btn__bell"></div>
+
+                                    </button>
+                                    <button class="btn-green btn btn-lg played" disabled>
+                                        <span class="btn__txt">
+                                            Completed
+                                            <div class="sweepstakes-card__gwy">gwy. no. 22000, 21001</div>
+                                        </span>
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+
+                                                                    
+                        <div class="sweepstakes-card sweepstakes-card--x1 ">
+                            <a href="1mm-money-booth-sweeps-monetized">
+                                <div class="sweepstakes-card__top">
+                                    <img class="sweepstakes-card__image" src="https://pchcomassets.pch.com/images/563/moneyboothentrymultiplierstmfeatsubf-415x275000000-2.png" alt="Million Dollar Money Booth" loading="lazy">
+                                    <div class="sweepstakes-card__completed-overlay">
+                                        <div class="completed-icon"></div>
+                                    </div>
+                                </div>
+                                <h2 class="sweepstakes-card__title">Million Dollar Money Booth Entry Multiplier</h2>
+                                <div class="sweepstakes-card__action">
+                                    <p class="sweepstakes-card__action__description">What’s better than a booth full of free money? You have four rounds in the money booth -- make each one count! Enter now and you could win money online – big money – claim up to TEN ENTRIES to Win $1 million dollars just for playing!</p>
+                                    <button class="btn-green btn btn-lg enter ">
+                                        <div class="btn__txt">
+                                            
+                                            <span class="btn__txt--bottom">Enter</span>
+                                            <div class="sweepstakes-card__gwy">gwy. no. 22000</div>
+                                            
+                                        </div>
+                                        <div class="btn__bell"></div>
+
+                                    </button>
+                                    <button class="btn-green btn btn-lg played" disabled>
+                                        <span class="btn__txt">
+                                            Completed
+                                            <div class="sweepstakes-card__gwy">gwy. no. 22000</div>
+                                        </span>
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+
+                                                            </div>
+            </section>
+        
+            <div class="placement-content">
+                <div id="div-pch-gpt-placement-bottom"></div>
+            </div>
+
+                    <section class="sweepstakes__nav sweepstakes__nav--bottom">
+    <header class="sweepstakes__section-header">More Ways to Win!</header>
+    <ul class="sweepstakes__nav__category-list">
+
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../all-pch-sweeps">
+                <div class="sweepstakes__nav__category-list__item__icon all-pch-sweeps"></div>
+                <div class="sweepstakes__nav__category-list__item__name">All PCH Sweeps</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../financial-freedom">
+                <div class="sweepstakes__nav__category-list__item__icon financial-freedom"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Financial Freedom</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../lifestyle">
+                <div class="sweepstakes__nav__category-list__item__icon lifestyle"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Lifestyle</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../million-dollar-sweeps">
+                <div class="sweepstakes__nav__category-list__item__icon million-dollar-sweeps"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Million Dollar</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../cash-is-king">
+                <div class="sweepstakes__nav__category-list__item__icon cash-is-king"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Cash Is King</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../pets">
+                <div class="sweepstakes__nav__category-list__item__icon pets"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Pet Sweeps</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../home-makeover">
+                <div class="sweepstakes__nav__category-list__item__icon home-makeover"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Makeover</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../win-for-life">
+                <div class="sweepstakes__nav__category-list__item__icon win-for-life"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Win For Life</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../dream-home">
+                <div class="sweepstakes__nav__category-list__item__icon dream-home"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Dream Home</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../grocery-food">
+                <div class="sweepstakes__nav__category-list__item__icon grocery-food"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Grocery &amp; Food</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../travel-vacation">
+                <div class="sweepstakes__nav__category-list__item__icon travel-vacation"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Travel &amp; Vacation</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../car-truck">
+                <div class="sweepstakes__nav__category-list__item__icon car-truck"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Car &amp; Truck</div>
+            </a>
+        </li>
+            <li class="sweepstakes__nav__category-list__item">  
+            <a href="../sweeps-games">
+                <div class="sweepstakes__nav__category-list__item__icon sweeps-games"></div>
+                <div class="sweepstakes__nav__category-list__item__name">Sweeps Games</div>
+            </a>
+        </li>
+    
+    </ul>
+</section>            </section>
+
+            <div class="sweepstakes__daily-token-bonus">
+    <div class="sweepstakes__daily-token-bonus__wrapper">
+        <header class="sweepstakes__daily-token-bonus__header">
+                        <svg id="header-bg"><defs><style>.cls-1{fill:#404040;fill-rule:evenodd;}</style></defs><path class="cls-1" d="M568.13,531l-6.9-22a6.36,6.36,0,0,0-5.87-4H312.1a6.36,6.36,0,0,0-5.87,4l-6.91,22a6.35,6.35,0,0,1-5.86,4H574A6.36,6.36,0,0,1,568.13,531Z" transform="translate(-293.46 -505)"/></svg>    
+                        <div class="header-text">
+                <h3 class="sweepstakes__daily-token-bonus__header__title">Sweeps Daily Token Bonus!</h3>
+                <span class="sweepstakes__daily-token-bonus__header__info-icon">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 38 38"><defs><style>.cls-1{fill:#3a3a3a;}.cls-2{isolation:isolate;}</style></defs><circle class="cls-1" cx="19" cy="19" r="19"/><image id="Ellipse_965" data-name="Ellipse 965" class="cls-2" width="11" height="27" transform="translate(13 6)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAbCAYAAACqenW9AAAACXBIWXMAAAsSAAALEgHS3X78AAABbElEQVQ4T32UPU8VQRhGDwsIYgFK6CAW+B9UciEkNOZWxBgrGxoqK8MvgNgROn+B2ppAqcUNGkPQ5BIIBaWtgcSP5hII91jsDpkdZn2STWZmz777PO/sDiqZa0n9rP5W99WWSg5cUHvW9UO9n4Kj6q55vSioawZYoEEp3M9ScAbspTaG1Q8ZC69sCDilvldP1UN1RS1UBtTcawtgBLgCLsJiE5zVUGZtEnhM2RmAfaAL1DwPqmvqtyTcqTpvFHBa/WSzNlWGgLvAW2AxYynoZ7CxXj19rG6r/aTqX/WRlQ3VL+q4ek+9TOCOVa4CeAe0gT+UnUg79PF6pLXdW06qnqtzceVYi8n8DDgIkxgeBp4k8BHQy8EtYDaBv8eTGH7GzXDdaPww/p1OknBX6kR1/6V6GSq1gQdJ1T6wCtwCNoCtUPm1/9dX9XbwPEWzjoCnQC/AJw3gDqXF6w8JdUx9o/6yPIU66nP1jtEO/wPzfBQaJcZqHAAAAABJRU5ErkJggg=="/></svg>
+                </span>
+            </div>
+        </header>
+        <div class="progress-states-wrapper">
+            <div class="progress-states show-progress">    
+                <section class="sweepstakes__daily-token-bonus__progress">
+                    <div class="sweepstakes__daily-token-bonus__progress__paddle left disable">
+                        <svg id="paddle-left" viewBox="0 0 57.99 93.94"><path d="M412.76,112a11,11,0,0,0,3.23,7.79l35.95,35.95a11,11,0,1,0,15.58-15.58L439.36,112l28.16-28.17a11,11,0,1,0-15.58-15.57L416,104.2A11,11,0,0,0,412.76,112Z" transform="translate(-412.76 -65.02)"/></svg>
+                    </div>
+                    <div class="progress-bar-wrapper">
+                        <div class="sweepstakes__daily-token-bonus__progress__progress-bar">
+                        
+                                                    
+                            <div class="reward-group">
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                            
+                                <div class="progress-reward ">
+                                    <div class="progress-reward__prize">
+                                        <span>5,000</span>Tokens!
+                                    </div>
+                                </div>
+                            </div>
+                                                    
+                            <div class="reward-group">
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                            
+                                <div class="progress-reward ">
+                                    <div class="progress-reward__prize">
+                                        <span>10,000</span>Tokens!
+                                    </div>
+                                </div>
+                            </div>
+                                                    
+                            <div class="reward-group">
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                            
+                                <div class="progress-reward ">
+                                    <div class="progress-reward__prize">
+                                        <span>20,000</span>Tokens!
+                                    </div>
+                                </div>
+                            </div>
+                                                    
+                            <div class="reward-group">
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                            
+                                <div class="progress-reward ">
+                                    <div class="progress-reward__prize">
+                                        <span>40,000</span>Tokens!
+                                    </div>
+                                </div>
+                            </div>
+                                                    
+                            <div class="reward-group">
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                                                            
+                                <div class="progress-icon "></div>
+                            
+                                <div class="progress-reward ">
+                                    <div class="progress-reward__prize">
+                                        <span>80,000</span>Tokens!
+                                    </div>
+                                </div>
+                            </div>
+                                                </div>
+                    </div>
+                    <div class="sweepstakes__daily-token-bonus__progress__paddle right">
+                        <svg id="paddle-right" viewBox="0 0 57.99 93.94"><path d="M470.75,112a11,11,0,0,0-3.23-7.79L431.57,68.25A11,11,0,1,0,416,83.82L444.16,112,416,140.15a11,11,0,1,0,15.58,15.58l35.95-35.95A11,11,0,0,0,470.75,112Z" transform="translate(-412.76 -65.02)"/></svg>
+                    </div>
+                </section>
+                <section class="sweepstakes__daily-token-bonus__info">
+                    <p class="sweepstakes__daily-token-bonus__info__message">Enter the specified number of sweepstakes between 12 AM &amp; 11:59 PM, ET to unlock each Token Reward. Once unlocked, you must come back to claim your Token Rewards the following day between 12 AM &amp; 11:59 PM, ET or they will be forfeited.</p>
+                    <div class="sweepstakes__daily-token-bonus__info__close-btn">
+                        <svg id="close-btn" viewBox="0 0 78 78"><defs><style>.cls-1{fill:#c2c2c2;}.cls-2,.cls-3{fill:#6b6b6b;}.cls-3{font-size:54.33px;font-family:ArialMT, Arial;letter-spacing:0.03em;}</style></defs><circle class="cls-1" cx="39" cy="39" r="36.5"/><path class="cls-2" d="M1109,708.5a34,34,0,1,1-34,34,34,34,0,0,1,34-34m0-5a39,39,0,1,0,39,39,39,39,0,0,0-39-39Z" transform="translate(-1070 -703.5)"/><text class="cls-3" transform="translate(16.35 58.12) scale(1.25 1)">X</text></svg>
+                    </div>
+                </section>
+
+                <section class="sweepstakes__daily-token-bonus__bonus-unlock">
+                    <header class="sweepstakes__daily-token-bonus__msg-header">Token reward unlocked - <i>keep it up!</i></header>
+                    <p class="sweepstakes__daily-token-bonus__msg-body">Come back & claim all your rewards here tomorrow!</p>
+                </section>
+
+                <section class="sweepstakes__daily-token-bonus__complete-all">
+                    <header class="sweepstakes__daily-token-bonus__msg-header">You've unlocked all your token rewards!</header>
+                                    </section>
+
+            </div>
+        </div>
+    </div>
+</div>    
+    
+    <script>
+        var PCH = PCH || {};
+        PCH.SWEEPSTAKES = PCH.SWEEPSTAKES || {};
+        PCH.SWEEPSTAKES.lightbox = 0;
+        PCH.SWEEPSTAKES.api = "/sweepstakes/events";
+        PCH.SWEEPSTAKES.gaTagJson = [];
+        PCH.SWEEPSTAKES.showMessage = 0;
+
+        
+            </script>
+
+                <section class="taboola-section">
+                    <div id="taboola-below-article-thumbnails" class="taboola-container"></div>
+                </section>
+                <div class="footerText">
+    <p class="sweepstakes__section-header">Top 10 Things To Do With The Winnings</p>
+
+    <p>Ready to win money from PCH for the ultimate vacation? Check out this Top 10 U.S. Vacation Destinations List now
+        to start thinking about where you&rsquo;d like to go if you win some extra cash:</p>
+
+    <p><strong>#10 &ndash; New York City</strong> &ndash; the city that never sleeps has something for everyone &ndash;
+        food, shows and shopping like nowhere else in the world.</p>
+
+    <p><strong>#9 &ndash; Orlando, FL</strong> &ndash; from the amusement parks to the action-packed nightlife, the fun
+        never stops.</p>
+
+    <p><strong>#8 &ndash; Yellowstone National Park</strong> &ndash; wildlife, trails and jaw-dropping scenery are just
+        some of the reasons to visit - and why you won&rsquo;t ever want to leave.</p>
+
+    <p><strong>#7 &ndash; Honolulu, HI</strong> &ndash; say &ldquo;aloha&rdquo; to the Capital of Hawaii and discover
+        relaxation like never before as you shop, dine and enjoy the sunshine on beautiful Waikiki Beach.</p>
+
+    <p><strong>#6 &ndash; Aspen, CO &ndash; know what &ldquo;rocks?&rdquo;</strong> &ndash; the Rocky Mountains in ski
+        season &ndash; and the best place to hit the slopes is Aspen with restaurants, boutiques and sites you&rsquo;ll
+        love.</p>
+
+    <p><strong>#5 &ndash; Washington DC</strong> &ndash; there&rsquo;s so much to experience in our nation&rsquo;s
+        Capital &ndash; discover history, art, nightlife and so many more treasures that make America great.</p>
+
+    <p><strong>#4 &ndash; Las Vegas, NV</strong> &ndash; stay in the heart of it all for the casinos, shows and
+        nightlife, then, take a tour of the Hoover Dam and the Grand Canyon for memories that last a lifetime.</p>
+
+    <p><strong>#3 &ndash; San Antonio, TX</strong> &ndash; check out the Alamo, the River Walk and the museums &ndash;
+        there&rsquo;s something for everyone.</p>
+
+    <p><strong>#2 &ndash; Nashville, TN</strong> &ndash; from the Honky Tonks to the 10-gallon hats everyone loves the
+        Nashville experience &ndash; even if you don&rsquo;t love Country music.</p>
+
+    <p><strong>#1 &ndash; Los Angeles, CA</strong> &ndash; this one made it to #1 because there&rsquo;s so much to do
+        &ndash; check out the sites, the studios, the celebs and see for yourself why L.A. is the place to be.</p>
+
+</div>
+
+<style>
+    .footerText{
+        color: #888888;
+    }
+    .device-mobile .sweepstakes__section-header {
+        font-size: 1rem;
+    }
+
+    .device-mobile .footerText {
+        font-size: 0.8rem;
+        padding: 16px;        
+
+    }
+</style>
+            </main>
+
+            
+            <aside class="col-sm-4 side-bar">
+    
+    
+        
+        
+
+                    <div class="sticky-wrapper" data-sticky>
+                                                    <div id="div-pch-gpt-placement-multiple"> </div><div id="placement-1"></div>
+
+                        <!-- SBG Bonus Game Module -->
+<!-- SBG Bonus Game Module End -->
+
+                    <div id="div-pch-gpt-placement-box2"></div><div id="placement-2"></div>
+                
+                                    <div class="trending-sweepstakes">
+        <header class="trending-sweepstakes__header">
+            <h2>Trending sweepstakes</h2>
+            <span class="expand-arrow"></span>
+        </header>
+        <ul class="trending-sweepstakes__list">
+                    <li>
+                <h3>Win The $1,250,000.00 Prize</h3>
+                <a href="../financial-freedom/feb-tv-2025"><button>Enter Now</button></a>
+            </li>
+                    <li>
+                <h3>Win $1,250,000.00 For Your Dream Home</h3>
+                <a href="../dream-home/ultimate-dream-home"><button>Enter Now</button></a>
+            </li>
+                    <li>
+                <h3>Win A Ford Bronco® Badlands®</h3>
+                <a href="../cash-is-king/ford-bronco-badlands"><button>Enter Now</button></a>
+            </li>
+                    <li>
+                <h3>$1,000,000.00 Jackpot at Stake</h3>
+                <a href="directions"><button>Enter Now</button></a>
+            </li>
+                    <li>
+                <h3>7 Seas Casino $25,000.00 Chill! Spin! Super Win!</h3>
+                <a href="../cash-is-king/d-7-seas-casino-25-000-chill-spin-ds-11-26-1-17"><button>Enter Now</button></a>
+            </li>
+          
+        </ul>
+    </div>
+                            </div>
+    </aside>
+        </div>
+    </div>
+    
+    <style>
+   .elevate-footer *{box-sizing:border-box;margin:0;padding:0}.sitefooter{color:#fff;font-family:"Source Sans 3",sans-serif;clear:both}.sitefooter__nav{background:#1c1c1c;padding:10px 16px 0}.sitefooter a,.sitefooter a:active,.sitefooter a:hover,.sitefooter a:link,.sitefooter a:visited{color:#fff;text-decoration:none}.elevate-footer .footer__privacy a:hover,.sitefooter a:hover{text-decoration:underline}.sitefooter__header{width:100%;margin:0 auto 32px;max-width:1200px;font-family:Poppins,sans-serif;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;border-bottom:2px solid #515151;padding-bottom:48px;font-weight:800;font-size:24px;line-height:1.5}.sitefooter__header .logo{grid-row-start:2;max-width:462px;width:100%;margin:0 0 7px;justify-self:center}.sitefooter__header p{grid-column-start:2;justify-self:center;align-self:end;letter-spacing:1px;margin:0}.sitefooter__body{width:100%;margin:0 auto;max-width:1200px;display:flex;padding:1rem 1rem 3.5rem;justify-content:space-between}.sitefooter__navgroups{width:35%;max-height:458px;display:flex;flex-direction:column;flex-wrap:wrap;text-align:left;margin-right:1rem}.sitefooter__navgroup:first-child{margin-bottom:3.5rem}.sitefooter__navgroup{max-width:50%;flex-grow:1;flex-basis:0;margin-right:1rem}.sitefooter__navgroup__title{font-family:Inter,sans-serif;font-size:16px;font-weight:700;line-height:1.2;margin-bottom:9px;text-transform:uppercase}.sitefooter__navgroup__links{font-size:14px;font-weight:400;line-height:1.29;list-style:none}.sitefooter__navgroup__link{padding-bottom:9px}.sitefooter__navgroup__link:last-child{padding-bottom:0}.elevate-footer .sitefooter__social{display:flex;list-style:none;justify-self:center;margin-left:2rem}.elevate-footer .sitefooter__social__link{margin-top:14px}.elevate-footer .sitefooter__social__link a{position:relative;display:block;width:51px;height:51px;margin-right:24px}.elevate-footer .sitefooter__social__link--pchblog{padding-left:52px}.elevate-footer .sitefooter__third-party{width:60%;max-width:760px}.elevate-footer .sitefooter__social__link--third-party{display:flex;justify-content:space-between;padding:30px 15px 18px;background:#fff;border-radius:15px;width:fit-content}.elevate-footer .sitefooter__social__link--third-party .truste{width:40%}.elevate-footer .sitefooter__social__link--third-party .iab{width:20%}.elevate-footer .sitefooter__social__link--third-party .bbb{width:35%}.elevate-footer .sitefooter__social__link--third-party a{margin-right:14px}.elevate-footer .sitefooter__social__link--third-party a:last-child{margin-right:0}.elevate-footer .sitefooter__social__link--third-party a img{width:100%}.elevate-footer .sitefooter__social__link a::before{content:" ";position:absolute;top:0;left:0;width:100%;height:100%;background:var(--social-logo) 0 0 no-repeat;background-size:contain}.elevate-footer .sitefooter_copy-container{background:#343434;padding:18px 0 35px}.elevate-footer .sitefooter__copy{width:100%;max-width:1198px;margin:0 auto;text-align:center}.elevate-footer .sitefooter__legal{font-size:12px;font-weight:400;line-height:1.14;margin-bottom:20px}.elevate-footer .sitefooter__legal b{font-size:16px}.elevate-footer .sitefooter__trademark{font-size:12px;font-weight:400;line-height:1.333}.elevate-footer .footer__privacy{width:100%;max-width:1198px;margin:0 auto 20px;align-items:center;justify-content:flex-start}.elevate-footer .footer__privacy a{display:flex;align-content:center;justify-content:center;text-decoration:none;font-size:14px;font-weight:400;line-height:1.333}.elevate-footer .footer__privacy img{margin-left:5px}@media screen and (max-width:640px){.elevate-footer .sitefooter__social .sitefooter__social__link a,.sitefooter__social__link--third-party a{margin-right:0}.elevate-footer .sitefooter__header{display:flex;flex-direction:column;align-items:center}.elevate-footer .sitefooter__header p{align-self:center;margin-bottom:.5rem}.elevate-footer .sitefooter__header .logo{margin-bottom:24px}.elevate-footer .sitefooter__social{justify-content:space-between;margin-left:0;width:95%}.elevate-footer .sitefooter__navgroups .sitefooter__navgroup{width:50%}.elevate-footer .sitefooter__social__link--third-party{width:100%;padding:10px 10px 4px;border-radius:10px}.elevate-footer .sitefooter__other{margin-left:-6px}.elevate-footer .sitefooter__other__link{margin-bottom:18px}.elevate-footer .sitefooter__other__link:first-child{margin-left:0}.sitefooter__nav{padding:15px 16px 0}.sitefooter__header{padding-bottom:38px}.sitefooter__body{flex-direction:column;padding:.5rem}.sitefooter__navgroups{width:100%;max-height:480px}.sitefooter__navgroup__title{font-size:14px}.elevate-footer .sitefooter__third-party{width:100%;margin-bottom:1rem}.sitefooter_copy-container{padding:18px 20px 35px}.sitefooter__legal{margin-bottom:30px}.sitefooter__legal b{font-size:14px;line-height:20px}.sitefooter__trademark{font-size:9px}}@media screen and (min-width:641px) and (max-width:1024px){.sitefooter__navgroups{max-height:480px}.sitefooter__third-party{margin-left:1rem}}
+</style>
+<div class="elevate-footer">
+    <footer class="sitefooter">
+        <nav class="sitefooter__nav">
+            <div class="sitefooter__header">
+                <!-- TO DO: replace logo with hosted version when available -->
+                <img class="logo" src="https://cdn.pch.com/ui/shared/footer/pchlogo.png" alt="PCH Logo">
+                <p><b>LET'S CONNECT</b></p>
+                <ul class="sitefooter__social">
+                                                                        <li
+                                style="--social-logo: url(https://cdn.pch.com/ui/shared/footer/facebook-icon.svg)" class="sitefooter__social__link">
+                                <a href="https://www.facebook.com/pch" target="_blank" 
+                                    aria-label="pchonfacebook"
+                                    data-ga-event="footer_click"
+                                    data-ga-click_name="facebook"
+                                    data-ga-click_location="footer"></a>
+                            </li>
+                                                    <li
+                                style="--social-logo: url(https://cdn.pch.com/ui/shared/footer/instagram-icon.svg)" class="sitefooter__social__link">
+                                <a href="https://www.instagram.com/pchofficial/" target="_blank" 
+                                    aria-label="pchoninstagram"
+                                    data-ga-event="footer_click"
+                                    data-ga-click_name="instagram"
+                                    data-ga-click_location="footer"></a>
+                            </li>
+                                                    <li
+                                style="--social-logo: url(https://cdn.pch.com/ui/shared/footer/youtube-icon.svg)" class="sitefooter__social__link">
+                                <a href="https://www.youtube.com/user/pchprizepatrol" target="_blank" 
+                                    aria-label="pchonyoutube"
+                                    data-ga-event="footer_click"
+                                    data-ga-click_name="youtube"
+                                    data-ga-click_location="footer"></a>
+                            </li>
+                                                    <li
+                                style="--social-logo: url(https://cdn.pch.com/ui/shared/footer/twitter-icon.svg)" class="sitefooter__social__link">
+                                <a href="https://twitter.com/pchdotcom/" target="_blank" 
+                                    aria-label="pchontwitter"
+                                    data-ga-event="footer_click"
+                                    data-ga-click_name="twitter"
+                                    data-ga-click_location="footer"></a>
+                            </li>
+                                                    <li
+                                style="--social-logo: url(https://cdn.pch.com/ui/shared/footer/tiktok-icon.svg)" class="sitefooter__social__link">
+                                <a href="https://www.tiktok.com/@pchofficial" target="_blank" 
+                                    aria-label="pchontiktok"
+                                    data-ga-event="footer_click"
+                                    data-ga-click_name="tiktok"
+                                    data-ga-click_location="footer"></a>
+                            </li>
+                                                            </ul>
+            </div>
+            <div class="sitefooter__body">
+                <div class="sitefooter__navgroups">
+                                                                        <section class="sitefooter__navgroup">
+                                <p class="sitefooter__navgroup__title">Other Channels</p>
+                                <ul class="sitefooter__navgroup__links">
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="../../index.html" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCH.com"
+                                                data-ga-click_location="footer">
+                                                    PCH.com
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://search.pch.com" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCH Search&amp;Win"
+                                                data-ga-click_location="footer">
+                                                    PCH Search&amp;Win
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="../../games" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCH Games"
+                                                data-ga-click_location="footer">
+                                                    PCH Games
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="../../quizzes" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCH Quizzes"
+                                                data-ga-click_location="footer">
+                                                    PCH Quizzes
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://survey.pch.com/pchsurveys" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCHAnswer&amp;Win"
+                                                data-ga-click_location="footer">
+                                                    PCHAnswer&amp;Win
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://blog.pch.com/" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCH Blog"
+                                                data-ga-click_location="footer">
+                                                    PCH Blog
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </section>
+                                                    <section class="sitefooter__navgroup">
+                                <p class="sitefooter__navgroup__title">MEDIA CENTER</p>
+                                <ul class="sitefooter__navgroup__links">
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://info.pch.com/media-contact" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Media Inquiries"
+                                                data-ga-click_location="footer">
+                                                    Media Inquiries
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://info.pch.com/general-sweepstakes" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Sweepstakes Information"
+                                                data-ga-click_location="footer">
+                                                    Sweepstakes Information
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://media.pch.com" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Advertise With Us"
+                                                data-ga-click_location="footer">
+                                                    Advertise With Us
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </section>
+                                                    <section class="sitefooter__navgroup">
+                                <p class="sitefooter__navgroup__title">CUSTOMER CARE CENTER</p>
+                                <ul class="sitefooter__navgroup__links">
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://info.pch.com/customer-service" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="About PCH"
+                                                data-ga-click_location="footer">
+                                                    About PCH
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://info.pch.com/fraud-protection" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Scam Prevention"
+                                                data-ga-click_location="footer">
+                                                    Scam Prevention
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="../../localwinners" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Local Area Winners"
+                                                data-ga-click_location="footer">
+                                                    Local Area Winners
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://preferences-mgr.trustarc.com/?pid=pch01&amp;aid=pch_pub01&amp;type=pch" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Ad Preferences"
+                                                data-ga-click_location="footer">
+                                                    Ad Preferences
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://privacy.pch.com/accessibility" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Accessibility Statement"
+                                                data-ga-click_location="footer">
+                                                    Accessibility Statement
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://privacy.pch.com/" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Privacy Policy"
+                                                data-ga-click_location="footer">
+                                                    Privacy Policy
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://privacy.pch.com/pchdotcom-tou" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Terms of Use"
+                                                data-ga-click_location="footer">
+                                                    Terms of Use
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://rules.pch.com/viewrulesfacts/?mailid=UniGen" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Official Rules"
+                                                data-ga-click_location="footer">
+                                                    Official Rules
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://rules.pch.com/viewrulesfacts/?mailid=UniGen" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Sweepstakes Facts"
+                                                data-ga-click_location="footer">
+                                                    Sweepstakes Facts
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://pch.custhelp.com/app/home" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="FAQ&#039;s"
+                                                data-ga-click_location="footer">
+                                                    FAQ&#039;s
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://myaccount.pch.com/Home/Index2?PaymentSourceId=0&amp;SessionExpired=False" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Pay Online"
+                                                data-ga-click_location="footer">
+                                                    Pay Online
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://info.pch.com/contact-us" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Info Center"
+                                                data-ga-click_location="footer">
+                                                    Info Center
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </section>
+                                                            </div>
+                                    <div class="sitefooter__third-party">
+                        <div class="sitefooter__social__link--third-party">
+                                                            <a target="_blank" rel="noopener noreferrer"
+                                   data-ga-event="footer_click"
+                                   data-ga-click_name="TRUSTe"
+                                   data-ga-click_location="footer"
+                                   href="https://privacy.truste.com/privacy-seal/validation?rid=6c68c1fd-0e45-4e30-a5c5-9e86439f1bdb" class="truste"
+                                >
+                                    <img src="https://hostedseal.trustarc.com/privacy-seal/seal?rid=6c68c1fd-0e45-4e30-a5c5-9e86439f1bdb" alt="TRUSTe Certified Privacy seal">
+                                </a>    
+                                                            <a target="_blank" rel="noopener noreferrer"
+                                   data-ga-event="footer_click"
+                                   data-ga-click_name="IAB"
+                                   data-ga-click_location="footer"
+                                   href="https://www.iab.net/iab_products_and_industry_services/508676/compliance/81617" class="iab"
+                                >
+                                    <img src="https://cdn.pch.com/ui/shared/footer/iab.png" alt="Interactive Advertising Bureau">
+                                </a>    
+                                                            <a target="_blank" rel="noopener noreferrer"
+                                   data-ga-event="footer_click"
+                                   data-ga-click_name="Better Business Bureaus"
+                                   data-ga-click_location="footer"
+                                   href="https://www.bbb.org/new-york-city/business-reviews/marketing-programs-and-services/publishers-clearing-house-llc-in-port-washington-ny-22145#sealclick" class="bbb"
+                                >
+                                    <img src="https://cdn.pch.com/ui/shared/footer/bbb.png" alt="better business bureau">
+                                </a>    
+                                                    </div>
+                    </div>
+                            </div>
+            
+        </nav>
+        <div class="sitefooter_copy-container">
+                            <div class="footer__privacy footer__other-links--nav-link">
+                    <a href="https://privacy.pch.com/privacy-choices" target="_blank"
+                        data-ga-event="footer_click"
+                        data-ga-click_name="Privacy Choices"
+                        data-ga-click_location="footer">
+                            Your Privacy Choices
+                            <img src="https://cdn.pch.com/ui/shared/privacyoptions.svg" width="29" height="14" alt="Privacy Options">
+                    </a>
+                </div>
+                        <div class="sitefooter__copy">
+                <p class="sitefooter__legal">
+                    <b>NO PURCHASE OR FEE NECESSARY TO ENTER. A PURCHASE WON&#039;T IMPROVE AN INDIVIDUAL&#039;S CHANCE OF WINNING.</b>
+                    <br /><br />
+                    © Copyright 2024 PCH.com. All Rights Reserved.
+                </p>
+                <p class="sitefooter__trademark">
+                    All trademarks and registered trademarks appearing on this site are the property of their respective owners. Said owners do not endorse nor are they affiliated with pch.com or its promotions.
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdn.pch.com/ui/shared/js/ccpa_sp_body.js"></script>
+<script>
+    window.pch_ccpa.init({
+        onloadCallback: () => {
+            window.pch_ccpa.attach()
+        }
+    });
+</script>    <div class="modal modal--golden-border modal-earn-tokens" id="modal-earn-tokens" tabindex="-1" role="dialog" aria-labelledby="modal-earn-tokens" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+        <div class="modal-earn-tokens__banner">
+          <img src="../../site_images/resources/assets/src/components/modals/earn-tokens/images/header_195b0df9eb63ac5a6c5943daee4b3a090.png" width="642" height="156" alt="So many ways to score tokens">
+        </div>
+        
+        <span class="modal-earn-tokens__title">
+          Score Tokens When You:
+        </span>
+        
+        <div class="modal-earn-tokens__wrapper">
+                      
+          <div class="modal-earn-tokens__left">
+            <img src="../../site_images/resources/assets/src/components/modals/earn-tokens/images/superprize356b1962d470db5dc6a954d46f517172.png" width="73" height="34" alt="Super Prize">
+          </div>
+          <div class="modal-earn-tokens__right">
+            <span class="modal-earn-tokens__text1">
+              Go for BIG Sweepstakes Opportunities
+            </span>
+            <span class="modal-earn-tokens__text2">
+              - 1000 Tokens for Your SuperPrize Entry! 150 Tokens for All Additional Entries!
+            </span>
+          </div>          
+          
+          <div class="modal-earn-tokens__left">
+            <img src="../../site_images/resources/assets/src/components/modals/earn-tokens/images/instantwin8e2fb6d15a9033a37c80a1fec85e6c0b.png" width="38" height="36" alt="Instantwin">
+          </div>
+          <div class="modal-earn-tokens__right">
+            <span class="modal-earn-tokens__text1">
+              Play Instant Win Scratch-Offs &amp; Games
+            </span>
+            <span class="modal-earn-tokens__text2">
+              - up to 10,000 Tokens Per Play!
+            </span>
+          </div>
+          <div class="modal-earn-tokens__left">
+            <img src="../../site_images/resources/assets/src/components/modals/earn-tokens/images/watch5c1fe0dcee412942913ecf600c6f1d22.png" width="37" height="36" alt="Watch">
+          </div>
+          <div class="modal-earn-tokens__right">
+            <span class="modal-earn-tokens__text1">
+              Watch Winning Moment on PCH.com
+            </span>
+            <span class="modal-earn-tokens__text2">
+              - 2500 Tokens A Day!
+            </span>
+          </div>
+          <div class="modal-earn-tokens__left">
+            <img src="../../site_images/resources/assets/src/components/modals/earn-tokens/images/unlock3ce39750152d5ce779c629f6907a7be0.png" width="38" height="30" alt="Unlock">
+          </div>              
+          <div class="modal-earn-tokens__right">
+            <span class="modal-earn-tokens__text1">
+              Unlock the $10,000.00 &amp; $20,000.00 Bonus Games
+            </span>
+            <span class="modal-earn-tokens__text2">
+              - up to 10,000 Tokens Per Game
+            </span>
+          </div>                      
+        </div>
+        
+        <div class="modal-earn-tokens__bottom">
+          Tokens can be redeemed for additional prize opportunities in the Token Exchange.
+        </div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+    </div>
+  </div>
+</div>            <div id="pch-live-assets"></div>
+    <div id="pch-site-skin"></div>
+
+    <script type="text/javascript" src="../../common/legacy-desktopcf5c9d60ab71aefb2c6d.js"></script>
+    <script type="text/javascript" src="../../common/common-desktope2ea8314ba981369c1b7.js"></script>
+    <script src="https://cdn.pch.com/ui/shared/js/ccpa_sp_body.js"></script>
+    <script>
+    window.pch_ccpa.init({
+        onloadCallback: () => {
+            window.pch_ccpa.attach()
+        }
+    })
+    </script>
+
+        <script src="../../sections/sweepstakes/category48607a0eaafb583d584e.js"></script>
+    <script>
+(() => {
+    let ele = document.querySelector('.survey-winners__header')
+    if (ele) {
+        ele.innerHTML = 'Recent Winners'
+    }
+
+    ele = document.querySelector('.bonus-game__header')
+    if (ele) {
+        ele.innerHTML = ele.innerHTML.replace('Big Gift Reveal', 'Ready Set Pop')
+    }
+
+})()
+</script>
+
+<script>
+    (function(){
+        const ele = document.querySelector('.uninav .uninav__top-bar__links')
+        if(ele){
+            for (let i = 0; i < ele.children.length; i++) {
+                if(ele){
+                    const txt = ele.children[i].querySelector('a').innerHTML.trim()
+                    if(txt === 'Earn Tokens'){
+                        ele.children[i].style.display = 'none'
+                        break;
+                    }
+                }
+            }
+        }
+    })()
+</script>
+
+<script>
+function isIpadOS() {
+    return navigator.maxTouchPoints &&
+        navigator.maxTouchPoints > 2 &&
+        /MacIntel/.test(navigator.platform);
+}
+if(isIpadOS() || PCH.ssoui === 'tablet'){
+    var dropdownName = document.querySelectorAll('.sweepstakes__dropdown__list__item a .dropdown-name')
+    for(var i=0; i<dropdownName.length; i++){
+        dropdownName[i].style.fontSize = '10px'
+    }
+}
+</script>
+
+<script>
+if(PCHUSER.type === 0){
+    var progressDots = document.querySelectorAll('.progress-icon')
+    for (var i = 0; i < progressDots.length; i++) {
+        progressDots[i].classList.remove('checked')
+     }
+}
+</script>
+
+
+    <script type="text/javascript" src="https://sc.pch.com/uninav/dist/v3/js/PCHUniversalNavigation.min.js?v=1.1.1"></script>
+
+
+<script>
+
+    window.UniNavMessages = [] ;
+
+    //Show UNS Message on Page Load
+    if (UniNavMessages) {
+        for (var i = 0, k = UniNavMessages.length; i < k; ++i) {
+            if (UniNavMessages[i]) {
+                PCH.uninav.controller.showMessage(UniNavMessages[i]);
+            }
+        }
+    }
+
+    PCH.siteSkin     = PCH.siteSkin || "" ;
+    /** Coming from Nova admin Site Skin Resources **/
+    PCH.customSiteSkin     = PCH.customSiteSkin || [] ;
+    PCH.evergageActionQueue = PCH.evergageActionQueue || [];
+
+    <!-- OPTINSHTML start --><!-- OPTINSHTML end -->
+
+
+</script>
+
+<!-- Slider Toast start -->
+<!-- Slider Toast end -->
+
+
+
+    
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c72205da0c","applicationID":"129383813","transactionName":"NgMGZhFWC0VWUk1bDg9JJVEXXgpYGEJOVwQRFRBTCFIWG1tQV1YIDwE=","queueTime":0,"applicationTime":105,"atts":"GkQFEFlMGEs=","errorBeacon":"bam.nr-data.net","agent":""}</script><script type="text/javascript"  src="../../SNprA/21g/0j_z/5SMD/Yl9b/1YLE0QSVcLwJiE/ZyMtejt5PAc/KGx/0FmUachoB"></script></body>
+
+</html>

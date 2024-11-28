@@ -1,0 +1,430 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+/*== START SITE LEVEL NAVIGATION */
+#subNavWrapper {
+  background-color: #fff;
+  box-shadow: 0px 7px 15px -2px rgba(0, 0, 0, 0.16);
+  overflow: visible;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 101;
+  min-height: 43px;
+  font-size: 18px;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#subNavWrapper ul.menu {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+#subNavWrapper ul.menu li {
+  line-height: 1.5;
+  margin-right: 5px;
+  color: #838080;
+  position: relative;
+}
+
+#subNavWrapper ul.menu li:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+#subNavWrapper ul.menu li a {
+  color: #838080;
+  text-decoration: none;
+  padding: 2px 5px;
+  display: block;
+}
+
+#subNavWrapper ul.menu li a:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#subNavWrapper ul.menu li a.active {
+  color: #dd7a06;
+  font-weight: 700;
+}
+
+/*== END SITE LEVEL NAVIGATION */
+a.games-tab-link.show,
+a.games-tab-link:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: rgb(73, 72, 72);
+}
+
+.game-tab__dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 0;
+  float: left;
+  position: absolute;
+  top: 32px;
+  left: 480px;
+  padding: 0;
+  border: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms;
+  overflow: hidden;
+}
+
+.game-tab__dropdown.show {
+  width: 515px;
+  padding: 12px 16px 12px 24px;
+  color: white;
+  border-radius: 10px;
+  background-image: linear-gradient(0, #1b1b1b 0%, #494848 100%);
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 102;
+}
+
+.game-tab__dropdown .game-tab__dropdown__left {
+  font-family: "Arial", sans-serif;
+  width: 215px;
+  min-height: 310px;
+  font-size: 12px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__left .game-tab__dropdown__left__header {
+  margin: 6px auto;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.7rem;
+}
+
+.game-tab__dropdown .game-tab__dropdown__left .game-tab__dropdown__left__header .game-tab__dropdown__left__header--title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.game-tab__dropdown .game-tab__dropdown__left .game-tab__dropdown__left__header .game-tab__dropdown__left__header--intro {
+  display: block;
+  font-size: 12px;
+  font-weight: 100;
+  margin-top: -10px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__left .game-tab__dropdown__left__tourn-box {
+  width: 215px;
+  height: 134px;
+  border-radius: 16px;
+  position: relative;
+  margin: 0 auto 9px auto;
+  overflow: hidden;
+}
+
+.game-tab__dropdown .game-tab__dropdown__left .game-tab__dropdown__left__tourn-box .game-tab__dropdown__left__tourn-box--img {
+  width: 100%;
+  height: 100%;
+}
+
+.game-tab__dropdown .game-tab__dropdown__left .game-tab__dropdown__left__tourn-box .game-tab__dropdown__left__tourn-box--cup {
+  background: url(../../images/gm-home-featured-cup.jpg?4f32c25799e1de99838021093c742ec7) no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__left .game-tab__dropdown__left__tourn-box .game-tab__dropdown__left__tourn-box--arrow {
+  background: #eaeaea url(../../images/ttg_arrow.png?6827e4ca1e43e2607b2f3a241b879514) no-repeat center;
+  width: 30px;
+  height: 24px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: right;
+  border-top-left-radius: 10px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__left .game-tab__dropdown__left__tourn-description .game-tab__dropdown__left__tourn-description--game-title {
+  font-size: 16px;
+  margin: 6px auto;
+  font-weight: bold;
+}
+
+.game-tab__dropdown .game-tab__dropdown__left .game-tab__dropdown__left__tourn-description .game-tab__dropdown__left__tourn-description--game-intro {
+  margin: 3px auto;
+  line-height: 17px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right {
+  color: white;
+  width: 230px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right a, .game-tab__dropdown .game-tab__dropdown__right:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list {
+  list-style-type: none;
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li {
+  text-transform: uppercase;
+  font-family: "Oswald", arial;
+  border-bottom: 1px solid #FFF;
+  font-size: 18px;
+  float: left;
+  width: 100%;
+  padding: 2px 0;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a {
+  padding: 0;
+  color: white;
+  height: 48px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a .game-tab__dropdown__right__list--icon {
+  background: url(../../images/games-icons.png?e5ffc73eed99c4397feda8c632368bf8);
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  float: left;
+  margin-right: 8px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a .game-tab__dropdown__right__list--icon.minute-mania {
+  background-position: -395px 5px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a .game-tab__dropdown__right__list--icon.cards-solitaire {
+  background-position: -540px 5px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a .game-tab__dropdown__right__list--icon.matching {
+  background-position: -252px 5px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a .game-tab__dropdown__right__list--icon.matching-mahjongg {
+  background-position: -252px 5px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a .game-tab__dropdown__right__list--icon.strategy {
+  background-position: -674px 5px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a .game-tab__dropdown__right__list--icon.word {
+  background-position: -819px 5px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a .game-tab__dropdown__right__list--icon.arcade {
+  background-position: -98px 5px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a .game-tab__dropdown__right__list--icon.token-events {
+  background-position: -959px 5px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li a span {
+  position: relative;
+  top: 12px;
+}
+
+.game-tab__dropdown .game-tab__dropdown__right .game-tab__dropdown__right__list li:last-child {
+  border-bottom: none;
+}
+
+#subNavWrapper .sweepstakes__dropdown .sweepstakes__dropdown__list .sweepstakes__dropdown__list__item {
+  margin: 0;
+}
+
+#subNavWrapper .sweepstakes__dropdown .sweepstakes__dropdown__list .sweepstakes__dropdown__list__item a {
+  color: #fff;
+  display: flex;
+  padding: 0;
+}
+
+.sweepstakes__dropdown {
+  width: 160px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 31px;
+  left: -40px;
+  color: #fff;
+  border-radius: 10px;
+  background-image: linear-gradient(0, #1b1b1b 0%, #494848 100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms;
+  z-index: 0;
+}
+
+.sweepstakes__dropdown.show {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 102;
+}
+
+.sweepstakes__dropdown__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sweepstakes__dropdown__list__item {
+  border-bottom: 1px solid #fff;
+}
+
+.sweepstakes__dropdown__list__item:last-child {
+  border-bottom: none;
+}
+
+.sweepstakes__dropdown__list__item > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  height: 2rem;
+}
+
+.sweepstakes__dropdown__list__item > a:hover {
+  text-decoration: none;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon {
+  background: url(../../images/dropdown-spritesheet.png?f2536ec0027adc0f93c97635585caf0d);
+  height: 65px;
+  width: 65px;
+  transform: scale(0.34);
+  margin-left: -12px;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.cash-is-king {
+  background: url(../../images/cash-is-king.svg?e5822ecc5b9499e3fdafb9ba7af1ed74);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.all-pch-sweeps {
+  background-position: -64px 0;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.million-dollar-sweeps {
+  background-position: -130px 0;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.dream-home {
+  background-position: -195px 0;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.financial-freedom {
+  background-position: -260px 0;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.makeover {
+  background: url(../../images/makeover.svg?aaeee8feb5cc49792875db306a7d52f8);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.home-makeover {
+  background: url(../../images/makeover.svg?aaeee8feb5cc49792875db306a7d52f8);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.lifestyle {
+  background: url(../../images/lifestyle.svg?25b0daa58bb8792331a0532db4077403);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.grocery-food {
+  background: url(../../images/groceries-food.svg?35fb723fb75652d92ecae4f9c83d6da5);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.pet-sweeps {
+  background: url(../../images/pets.svg?0760ef2a527bcb6751ddf84313034bf6);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.pets {
+  background: url(../../images/pets.svg?0760ef2a527bcb6751ddf84313034bf6);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.sweep-games {
+  background: url(../../images/sweeps-games.svg?58268b6d834033542537694e7ce8263f);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.sweeps-games {
+  background: url(../../images/sweeps-games.svg?58268b6d834033542537694e7ce8263f);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.car-truck {
+  background: url(../../images/car-truck.svg?897c7d863dd83269c155cdf00e2cc817);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.travel-vacation {
+  background: url(../../images/travel-vacation.svg?8fad5e95a5fda1f553b34988bbfa1773);
+  background-repeat: no-repeat;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-icon.win-for-life {
+  background-position: -780px 0;
+}
+
+.sweepstakes__dropdown__list__item > a .dropdown-name {
+  text-transform: uppercase;
+  font-family: "Oswald", arial;
+  font-size: 0.8rem;
+  margin-left: -12px;
+}
+
+.sweeps-tab-link.show {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #494848;
+}
+
+#app #leaderboard--pch {
+  line-height: 15px;
+  width: auto;
+  max-width: 343px;
+}
+
+#app #leaderboard--pch > div.leaderboard--main > div.leaderboard--scoreboard > table > tbody > tr > td:nth-child(1) {
+  text-align: center;
+}
+
+#app #leaderboard--pch .leaderboard--main .leaderboard--header p {
+  padding: 0 0.8rem;
+}

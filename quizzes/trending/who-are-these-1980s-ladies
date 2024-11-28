@@ -1,0 +1,1169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["*","bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VwAEUldXGwAFUVBUAQQEUg==",licenseKey:"c72205da0c",applicationID:"355166534"};;/*! For license information please see nr-loader-spa-1.274.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555:(e,t,r)=>{"use strict";r.d(t,{Vp:()=>c,fn:()=>s,x1:()=>u});var n=r(384),i=r(8122);const o={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){try{const t=c(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}function c(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function u(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.info=a[e])}},9417:(e,t,r)=>{"use strict";r.d(t,{D0:()=>h,gD:()=>g,xN:()=>p});var n=r(993);const i=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var o=r(2614),a=r(944),s=r(384),c=r(8122);const u="[data-nr-mask]",d=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},feature_flags:[],generic_events:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},harvest:{tooManyRequestsDelay:60},jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},logging:{enabled:!0,harvestTimeSeconds:10,autoStart:!0,level:n.p_.INFO},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:o.wk,inactiveMs:o.BB},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){i(t)?e.mask_selector="".concat(t,",").concat(u):""===t||null===t?e.mask_selector=u:(0,a.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){i(t)?e.block_selector+=",".concat(t):""!==t&&(0,a.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,a.R)(7,t)}},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},ssl:void 0,user_actions:{enabled:!0}}},l={},f="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(f);if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function p(e,t){if(!e)throw new Error(f);l[e]=(0,c.a)(t,d());const r=(0,s.nY)(e);r&&(r.init=l[e])}function g(e,t){if(!e)throw new Error(f);var r=h(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}},5603:(e,t,r)=>{"use strict";r.d(t,{a:()=>c,o:()=>s});var n=r(384),i=r(8122);const o={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},a={};function s(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!a[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.loader_config=a[e])}},3371:(e,t,r)=>{"use strict";r.d(t,{V:()=>f,f:()=>l});var n=r(8122),i=r(384),o=r(6154),a=r(9324);let s=0;const c={buildEnv:a.F3,distMethod:a.Xs,version:a.xv,originTime:o.WN},u={customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,onerror:void 0,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,denyList:void 0,timeKeeper:void 0,obfuscator:void 0},d={};function l(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!d[e])throw new Error("Runtime for ".concat(e," was never set"));return d[e]}function f(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");d[e]={...(0,n.a)(t,u),...c},Object.hasOwnProperty.call(d[e],"harvestCount")||Object.defineProperty(d[e],"harvestCount",{get:()=>++s});const r=(0,i.nY)(e);r&&(r.runtime=d[e])}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>o,Yq:()=>a,xv:()=>n});const n="1.274.0",i="PROD",o="CDN",a="^2.0.0-alpha.17"},6154:(e,t,r)=>{"use strict";r.d(t,{A4:()=>s,OF:()=>d,RI:()=>i,WN:()=>h,bv:()=>o,gm:()=>a,lR:()=>f,m:()=>u,mw:()=>c,sb:()=>l});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s="complete"===a?.document?.readyState,c=Boolean("hidden"===a?.document?.visibilityState),u=""+a?.location,d=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),l=d&&"undefined"==typeof SharedWorker,f=(()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),h=Date.now()-(0,n.t)()},7295:(e,t,r)=>{"use strict";r.d(t,{Xv:()=>a,gX:()=>i,iW:()=>o});var n=[];function i(e){if(!e||o(e))return!1;if(0===n.length)return!0;for(var t=0;t<n.length;t++){var r=n[t];if("*"===r.hostname)return!1;if(s(r.hostname,e.hostname)&&c(r.pathname,e.pathname))return!1}return!0}function o(e){return void 0===e.hostname}function a(e){if(n=[],e&&e.length)for(var t=0;t<e.length;t++){let r=e[t];if(!r)continue;0===r.indexOf("http://")?r=r.substring(7):0===r.indexOf("https://")&&(r=r.substring(8));const i=r.indexOf("/");let o,a;i>0?(o=r.substring(0,i),a=r.substring(i)):(o=r,a="");let[s]=o.split(":");n.push({hostname:s,pathname:a})}}function s(e,t){return!(e.length>t.length)&&t.indexOf(e)===t.length-e.length}function c(e,t){return 0===e.indexOf("/")&&(e=e.substring(1)),0===t.indexOf("/")&&(t=t.substring(1)),""===e||e===t}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>c,Ze:()=>l,x3:()=>u});var n=r(7836),i=r(3606),o=r(860),a=r(2646);const s={};function c(e,t){const r={staged:!1,priority:o.P3[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){e&&s[e]&&(s[e].get(t)&&s[e].delete(t),h(e,t,!1),s[e].size&&f(e))}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(e="",t="feature",r=!1){if(d(e),!e||!s[e].get(t)||r)return h(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=Array.from(s[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{s[e].delete(t),h(e,t)})))}function h(e,t,r=!0){const o=e?n.ee.get(e):n.ee,s=i.i.handlers;if(!o.aborted&&o.backlog&&s){if(r){const e=o.backlog[t],r=s[t];if(r){for(let t=0;e&&t<e.length;++t)p(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof a.y&&t[0].on(e,t[1])}))}))}}o.isolatedBacklog||delete s[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function p(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],o=e[2];n.apply(i,o)}}))}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>c,ee:()=>u});var n=r(384),i=r(8990),o=r(3371),a=r(2646),s=r(5607);const c="nr@context:".concat(s.W),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.f)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=h(n),c=g(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=v()[s[e]];p&&p.push([f,e,r,a]);return a},get:m,listeners:g,context:h,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function h(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,c,(()=>new a.y(c))):new a.y(c)}function p(e,t){n[e]=g(e).concat(t)}function g(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=u)},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>o});var n=r(9908);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.d,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.d);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function o(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>o,jT:()=>n,sp:()=>i})},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,ZF:()=>c,bz:()=>a,el:()=>u});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>o});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},7485:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(6154);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n.gm?.location?.protocol&&t.host===n.gm?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},944:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.debug&&console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t)}r.d(t,{R:()=>n})},5284:(e,t,r)=>{"use strict";r.d(t,{t:()=>c,B:()=>s});var n=r(7836),i=r(6154);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(e={}){try{i.gm.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},3304:(e,t,r)=>{"use strict";r.d(t,{A:()=>o});var n=r(7836);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())??""}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}return""}}},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,sB:()=>a});var n=r(3878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.sp)("load",e,t)}function a(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>d,Zm:()=>a,bQ:()=>c,dV:()=>s,nY:()=>u,pV:()=>l});var n=r(6154),i=r(1863);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=a();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},2843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},8139:(e,t,r)=>{"use strict";r.d(t,{u:()=>f});var n=r(7836),i=r(3434),o=r(8990),a=r(6154);const s={},c=a.gm.XMLHttpRequest,u="addEventListener",d="removeEventListener",l="nr@wrapped:".concat(n.P);function f(e){var t=function(e){return(e||n.ee).get("events")}(e);if(s[t.debugId]++)return t;s[t.debugId]=1;var r=(0,i.YM)(t,!0);function f(e){r.inPlace(e,[u,d],"-",p)}function p(e,t){return e[1]}return"getPrototypeOf"in Object&&(a.RI&&h(document,f),h(a.gm,f),h(c.prototype,f)),t.on(u+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,o.I)(n,l,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(d+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function h(e,t,...r){let n=e;for(;"object"==typeof n&&!Object.prototype.hasOwnProperty.call(n,u);)n=Object.getPrototypeOf(n);n&&t(n,...r)}},3434:(e,t,r)=>{"use strict";r.d(t,{Jt:()=>o,YM:()=>c});var n=r(7836),i=r(5607);const o="nr@original:".concat(i.W);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}},9300:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.ajax},3333:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,Zp:()=>i,mq:()=>s,nf:()=>a,qN:()=>o});const n=r(860).K7.genericEvents,i=["auxclick","click","copy","keydown","paste","scrollend"],o=["focus","blur"],a=4,s=1e3},6774:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.jserrors},993:(e,t,r)=>{"use strict";r.d(t,{ET:()=>o,TZ:()=>a,p_:()=>i});var n=r(860);const i={ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"},o="log",a=n.K7.logging},3785:(e,t,r)=>{"use strict";r.d(t,{R:()=>c,b:()=>u});var n=r(9908),i=r(1863),o=r(860),a=r(3969),s=r(993);function c(e,t,r={},c=s.p_.INFO){(0,n.p)(a.xV,["API/logging/".concat(c.toLowerCase(),"/called")],void 0,o.K7.metrics,e),(0,n.p)(s.ET,[(0,i.t)(),t,r,c],void 0,o.K7.logging,e)}function u(e){return"string"==typeof e&&Object.values(s.p_).some((t=>t===e.toUpperCase().trim()))}},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>a,z_:()=>o});const n=r(860).K7.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},6344:(e,t,r)=>{"use strict";r.d(t,{BB:()=>d,G4:()=>o,Qb:()=>l,TZ:()=>i,Ug:()=>a,_s:()=>s,bc:()=>u,yP:()=>c});var n=r(2614);const i=r(860).K7.sessionReplay,o={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"},a=.12,s={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},c={[n.g.ERROR]:15e3,[n.g.FULL]:3e5,[n.g.OFF]:0},u={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},d=5e3,l={API:"api"}},5270:(e,t,r)=>{"use strict";r.d(t,{Aw:()=>c,CT:()=>u,SR:()=>s});var n=r(384),i=r(9417),o=r(7767),a=r(6154);function s(e){return!!(0,n.dV)().o.MO&&(0,o.V)(e)&&!0===(0,i.gD)(e,"session_trace.enabled")}function c(e){return!0===(0,i.gD)(e,"session_replay.preload")&&s(e)}function u(e,t){const r=t.correctAbsoluteTimestamp(e);return{originalTimestamp:e,correctedTimestamp:r,timestampDiff:e-r,originTime:a.WN,correctedOriginTime:t.correctedOriginTime,originTimeDiff:Math.floor(a.WN-t.correctedOriginTime)}}},3738:(e,t,r)=>{"use strict";r.d(t,{He:()=>i,Kp:()=>s,Lc:()=>u,Rz:()=>d,TZ:()=>n,bD:()=>o,d3:()=>a,jx:()=>l,uP:()=>c});const n=r(860).K7.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState",l=1e3},3962:(e,t,r)=>{"use strict";r.d(t,{AM:()=>o,O2:()=>s,Qu:()=>c,TZ:()=>a,ih:()=>u,tC:()=>i});var n=r(860);const i=["click","keydown","submit"],o="api",a=n.K7.softNav,s={INITIAL_PAGE_LOAD:"",ROUTE_CHANGE:1,UNSPECIFIED:2},c={INTERACTION:1,AJAX:2,CUSTOM_END:3,CUSTOM_TRACER:4},u={IP:"in progress",FIN:"finished",CAN:"cancelled"}},7378:(e,t,r)=>{"use strict";r.d(t,{$p:()=>x,BR:()=>b,Kp:()=>R,L3:()=>y,Lc:()=>c,NC:()=>o,SG:()=>d,TZ:()=>i,U6:()=>p,UT:()=>m,d3:()=>w,dT:()=>f,e5:()=>A,gx:()=>v,l9:()=>l,oW:()=>h,op:()=>g,rw:()=>u,tH:()=>E,uP:()=>s,wW:()=>T,xq:()=>a});var n=r(384);const i=r(860).K7.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=(0,n.dV)().o.ST,w="-start",R="-end",x="-body",T="cb"+R,A="jsTime",E="fetch"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>o});var n=r(7836),i=r(1687);class o{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},7767:(e,t,r)=>{"use strict";r.d(t,{V:()=>o});var n=r(9417),i=r(6154);const o=e=>i.RI&&!0===(0,n.gD)(e,"privacy.cookies_enabled")},425:(e,t,r)=>{"use strict";r.d(t,{j:()=>j});var n=r(860),i=r(2555),o=r(3371),a=r(9908),s=r(7836),c=r(1687),u=r(5289),d=r(6154),l=r(944),f=r(3969),h=r(384),p=r(6344);const g=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start",p.G4.RECORD,p.G4.PAUSE,"log","wrapLogger"],m=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(1863),b=r(2614),y=r(993),w=r(3785),R=r(2646),x=r(3434);function T(e,t,r,n){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,l.R)(29);const i=function(e){return(e||s.ee).get("logger")}(e),o=(0,x.YM)(i),a=new R.y(s.P);return a.level=n.level,a.customAttributes=n.customAttributes,o.inPlace(t,[r],"wrap-logger-",a),i}function A(){const e=(0,h.pV)();g.forEach((t=>{e[t]=(...r)=>function(t,...r){let n=[];return Object.values(e.initializedAgents).forEach((e=>{e&&e.api?e.exposed&&e.api[t]&&n.push(e.api[t](...r)):(0,l.R)(38,t)})),n.length>1?n:n[0]}(t,...r)}))}const E={};var S=r(9417),N=r(5603),O=r(5284);const _=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let I=!1;function j(e,t={},g,R){let{init:x,info:j,loader_config:P,runtime:C={},exposed:k=!0}=t;C.loaderType=g;const L=(0,h.pV)();j||(x=L.init,j=L.info,P=L.loader_config),(0,S.xN)(e.agentIdentifier,x||{}),(0,N.a)(e.agentIdentifier,P||{}),j.jsAttributes??={},d.bv&&(j.jsAttributes.isWorker=!0),(0,i.x1)(e.agentIdentifier,j);const H=(0,S.D0)(e.agentIdentifier),D=[j.beacon,j.errorBeacon];I||(H.proxy.assets&&(_(H.proxy.assets),D.push(H.proxy.assets)),H.proxy.beacon&&D.push(H.proxy.beacon),A(),(0,h.US)("activatedFeatures",O.B),e.runSoftNavOverSpa&&=!0===H.soft_navigations.enabled&&H.feature_flags.includes("soft_nav")),C.denyList=[...H.ajax.deny_list||[],...H.ajax.block_internal?D:[]],C.ptid=e.agentIdentifier,(0,o.V)(e.agentIdentifier,C),e.ee=s.ee.get(e.agentIdentifier),void 0===e.api&&(e.api=function(e,t,h=!1){t||(0,c.Ak)(e,"api");const g={};var R=s.ee.get(e),x=R.get("tracer");E[e]=b.g.OFF,R.on(p.G4.REPLAY_RUNNING,(t=>{E[e]=t}));var A="api-",S=A+"ixn-";function N(t,r,n,o){const a=(0,i.Vp)(e);return null===r?delete a.jsAttributes[t]:(0,i.x1)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),I(A,n,!0,o||null===r?"session":void 0)(t,r)}function O(){}g.log=function(e,{customAttributes:t={},level:r=y.p_.INFO}={}){(0,a.p)(f.xV,["API/log/called"],void 0,n.K7.metrics,R),(0,w.R)(R,e,t,r)},g.wrapLogger=(e,t,{customAttributes:r={},level:i=y.p_.INFO}={})=>{(0,a.p)(f.xV,["API/wrapLogger/called"],void 0,n.K7.metrics,R),T(R,e,t,{customAttributes:r,level:i})},m.forEach((e=>{g[e]=I(A,e,!0,"api")})),g.addPageAction=I(A,"addPageAction",!0,n.K7.genericEvents),g.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,o.f)(e).customTransaction=(r||"http://custom.transaction")+t,I(A,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t,r=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return N(e,t,"setCustomAttribute",r);(0,l.R)(40,typeof t)}else(0,l.R)(39,typeof e)},g.setUserId=function(e){if("string"==typeof e||null===e)return N("enduser.id",e,"setUserId",!0);(0,l.R)(41,typeof e)},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return N("application.version",e,"setApplicationVersion",!1);(0,l.R)(42,typeof e)},g.start=()=>{try{(0,a.p)(f.xV,["API/start/called"],void 0,n.K7.metrics,R),R.emit("manual-start-all")}catch(e){(0,l.R)(23,e)}},g[p.G4.RECORD]=function(){(0,a.p)(f.xV,["API/recordReplay/called"],void 0,n.K7.metrics,R),(0,a.p)(p.G4.RECORD,[],void 0,n.K7.sessionReplay,R)},g[p.G4.PAUSE]=function(){(0,a.p)(f.xV,["API/pauseReplay/called"],void 0,n.K7.metrics,R),(0,a.p)(p.G4.PAUSE,[],void 0,n.K7.sessionReplay,R)},g.interaction=function(e){return(new O).get("object"==typeof e?e:{})};const _=O.prototype={createTracer:function(e,t){var r={},i=this,o="function"==typeof t;return(0,a.p)(f.xV,["API/createTracer/called"],void 0,n.K7.metrics,R),h||(0,a.p)(S+"tracer",[(0,v.t)(),e,r],i,n.K7.spa,R),function(){if(x.emit((o?"":"no-")+"fn-start",[(0,v.t)(),i,o],r),o)try{return t.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw x.emit("fn-err",[arguments,this,t],r),t}finally{x.emit("fn-end",[(0,v.t)()],r)}}}};function I(e,t,r,i){return function(){return(0,a.p)(f.xV,["API/"+t+"/called"],void 0,n.K7.metrics,R),i&&(0,a.p)(e+t,[(0,v.t)(),...arguments],r?null:this,i,R),r?void 0:this}}function j(){r.e(478).then(r.bind(r,8778)).then((({setAPI:t})=>{t(e),(0,c.Ze)(e,"api")})).catch((e=>{(0,l.R)(27,e),R.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{_[e]=I(S,e,void 0,h?n.K7.softNav:n.K7.spa)})),g.setCurrentRouteName=h?I(S,"routeName",void 0,n.K7.softNav):I(A,"routeName",!0,n.K7.spa),g.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,a.p)(f.xV,["API/noticeError/called"],void 0,n.K7.metrics,R),(0,a.p)("err",[t,(0,v.t)(),!1,r,!!E[e]],void 0,n.K7.jserrors,R)},d.RI?(0,u.GG)((()=>j()),!0):j(),g}(e.agentIdentifier,R,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=k),I=!0}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>o,K7:()=>n,P3:()=>i});const n={ajax:"ajax",genericEvents:"generic_events",jserrors:"jserrors",logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.spa]:5,[n.ajax]:6,[n.sessionTrace]:7,[n.softNav]:8,[n.sessionReplay]:9,[n.logging]:10,[n.genericEvents]:11},o={[n.pageViewTiming]:"events",[n.ajax]:"events",[n.spa]:"events",[n.softNav]:"events",[n.metrics]:"jserrors",[n.jserrors]:"jserrors",[n.sessionTrace]:"browser/blobs",[n.sessionReplay]:"browser/blobs",[n.logging]:"browser/logs",[n.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({212:"nr-spa-compressor",249:"nr-spa-recorder",478:"nr-spa"}[e]+"-1.274.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.274.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={478:"sha512-1vUqEfJPB8Pihje9mv5CfYgkitO1FWcS+UQb84DbXqP8oYctRv4/lzl/MzNLPlRhcY1WVDBGL20I8vm6s2VV7g==",249:"sha512-Y/BeZAh6VSTmUtUNmS5XdyKxL92s30Fyyj8xVW76HSPxcKItL4+x2+kGMZc8pMJnUpZDz1L4eftZQAJh3D8NnA==",212:"sha512-Gn2tQ3qog5Yhrx/gRutkSTYPp+7nkKFt4/mIXg99LxcNpMDAYJZDBYmAACdoHNM86+iq1F3cBcQotFNzjIX8bw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={38:0,788:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.274.0.PROD"]=self["webpackChunk:NRBA-1.274.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(944),t=i(6344),r=i(9566);class n{agentIdentifier;constructor(e=(0,r.LA)(16)){this.agentIdentifier=e}#e(t,...r){if("function"==typeof this.api?.[t])return this.api[t](...r);(0,e.R)(35,t)}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}addRelease(e,t){return this.#e("addRelease",e,t)}log(e,t){return this.#e("log",e,t)}}class o extends n{#e(t,...r){if("function"==typeof this.api?.[t])return this.api[t](...r);(0,e.R)(35,t)}start(){return this.#e("start")}finished(e){return this.#e("finished",e)}recordReplay(){return this.#e(t.G4.RECORD)}pauseReplay(){return this.#e(t.G4.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}wrapLogger(e,t,r){return this.#e("wrapLogger",e,t,r)}}var a=i(860),s=i(9417);const c=Object.values(a.K7);function u(e){const t={};return c.forEach((r=>{t[r]=function(e,t){return!0===(0,s.gD)(t,"".concat(e,".enabled"))}(r,e)})),t}var d=i(425);var l=i(1687),f=i(4234),h=i(5289),p=i(6154),g=i(5270),m=i(7767),v=i(6389);class b extends f.W{constructor(e,t,r=!0){super(e.agentIdentifier,t),this.auto=r,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===e.init[this.featureName].autoStart&&(this.auto=!1),this.auto?(0,l.Ak)(e.agentIdentifier,t):this.ee.on("manual-start-all",(0,v.J)((()=>{(0,l.Ak)(e.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator(e)})))}importAggregator(t,r={}){if(this.featAggregate||!this.auto)return;let n;this.onAggregateImported=new Promise((e=>{n=e}));const o=async()=>{let o;try{if((0,m.V)(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(478).then(i.bind(i,6526));o=e(t)}}catch(t){(0,e.R)(20,t),this.ee.emit("internal-error",[t]),this.featureName===a.K7.sessionReplay&&this.abortHandler?.()}try{if(t.sharedAggregator)await t.sharedAggregator;else{t.sharedAggregator=i.e(478).then(i.bind(i,9337));const{EventAggregator:e}=await t.sharedAggregator;t.sharedAggregator=new e}if(!this.#t(this.featureName,o))return(0,l.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{lazyFeatureLoader:e}=await i.e(478).then(i.bind(i,6103)),{Aggregate:a}=await e(this.featureName,"aggregate");this.featAggregate=new a(t,r),n(!0)}catch(t){(0,e.R)(34,t),this.abortHandler?.(),(0,l.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};p.RI?(0,h.GG)((()=>o()),!0):o()}#t(e,t){switch(e){case a.K7.sessionReplay:return(0,g.SR)(this.agentIdentifier)&&!!t;case a.K7.sessionTrace:return!!t;default:return!0}}}var y=i(6630);class w extends b{static featureName=y.T;constructor(e,t=!0){super(e,y.T,t),this.importAggregator(e)}}var R=i(384);var x=i(9908),T=i(2843),A=i(3878),E=i(782),S=i(1863);class N extends b{static featureName=E.T;constructor(e,t=!0){super(e,E.T,t),p.RI&&((0,T.u)((()=>(0,x.p)("docHidden",[(0,S.t)()],void 0,E.T,this.ee)),!0),(0,A.sp)("pagehide",(()=>(0,x.p)("winPagehide",[(0,S.t)()],void 0,E.T,this.ee))),this.importAggregator(e))}}var O=i(3969);class _ extends b{static featureName=O.TZ;constructor(e,t=!0){super(e,O.TZ,t),this.importAggregator(e)}}var I=i(6774),j=i(3304);class P{constructor(e,t,r,n,i){this.name="UncaughtError",this.message="string"==typeof e?e:(0,j.A)(e),this.sourceURL=t,this.line=r,this.column=n,this.__newrelic=i}}function C(e){return H(e)?e:new P(void 0!==e?.message?e.message:e,e?.filename||e?.sourceURL,e?.lineno||e?.line,e?.colno||e?.col,e?.__newrelic)}function k(e){const t="Unhandled Promise Rejection";if(!e?.reason)return;if(H(e.reason))try{return e.reason.message=t+": "+e.reason.message,C(e.reason)}catch(t){return C(e.reason)}const r=C(e.reason);return r.message=t+": "+r?.message,r}function L(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new P(e.message,e.filename,e.lineno,e.colno,e.error.__newrelic);return t.name=SyntaxError.name,t}return H(e.error)?e.error:C(e)}function H(e){return e instanceof Error&&!!e.stack}class D extends b{static featureName=I.T;#r=!1;constructor(e,r=!0){super(e,I.T,r);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("internal-error",(e=>{this.abortHandler&&(0,x.p)("ierr",[C(e),(0,S.t)(),!0,{},this.#r],void 0,this.featureName,this.ee)})),this.ee.on(t.G4.REPLAY_RUNNING,(e=>{this.#r=e})),p.gm.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,x.p)("err",[k(e),(0,S.t)(),!1,{unhandledPromiseRejection:1},this.#r],void 0,this.featureName,this.ee)}),(0,A.jT)(!1,this.removeOnAbort?.signal)),p.gm.addEventListener("error",(e=>{this.abortHandler&&(0,x.p)("err",[L(e),(0,S.t)(),!1,{},this.#r],void 0,this.featureName,this.ee)}),(0,A.jT)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#n,this.importAggregator(e)}#n(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}var M=i(8990);let K=1;const U="nr@id";function V(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===p.gm?0:(0,M.I)(e,U,(function(){return K++}))}function G(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,j.A)(e).length}catch(e){return}}}var F=i(8139),B=i(7836),W=i(3434);const z={},q=["open","send"];function Z(t){var r=t||B.ee;const n=function(e){return(e||B.ee).get("xhr")}(r);if(z[n.debugId]++)return n;z[n.debugId]=1,(0,F.u)(r);var i=(0,W.YM)(n),o=p.gm.XMLHttpRequest,a=p.gm.MutationObserver,s=p.gm.Promise,c=p.gm.setInterval,u="readystatechange",d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],l=[],f=p.gm.XMLHttpRequest=function(t){const r=new o(t),a=n.context(r);try{n.emit("new-xhr",[r],a),r.addEventListener(u,(s=a,function(){var e=this;e.readyState>3&&!s.resolved&&(s.resolved=!0,n.emit("xhr-resolved",[],e)),i.inPlace(e,d,"fn-",y)}),(0,A.jT)(!1))}catch(t){(0,e.R)(15,t);try{n.emit("internal-error",[t])}catch(e){}}var s;return r};function h(e,t){i.inPlace(t,["onreadystatechange"],"fn-",y)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,f),f.prototype=o.prototype,i.inPlace(f.prototype,q,"-xhr-",y),n.on("send-xhr-start",(function(e,t){h(e,t),function(e){l.push(e),a&&(g?g.then(b):c?c(b):(m=-m,v.data=m))}(t)})),n.on("open-xhr-start",h),a){var g=s&&s.resolve();if(!c&&!s){var m=1,v=document.createTextNode(m);new a(b).observe(v,{characterData:!0})}}else r.on("fn-end",(function(e){e[0]&&e[0].type===u||b()}));function b(){for(var e=0;e<l.length;e++)h(0,l[e]);l.length&&(l=[])}function y(e,t){return t}return n}var Y="fetch-",X=Y+"body-",J=["arrayBuffer","blob","json","text","formData"],Q=p.gm.Request,ee=p.gm.Response,te="prototype";const re={};function ne(e){const t=function(e){return(e||B.ee).get("fetch")}(e);if(!(Q&&ee&&p.gm.fetch))return t;if(re[t.debugId]++)return t;function r(e,r,n){var i=e[r];"function"==typeof i&&(e[r]=function(){var e,r=[...arguments],o={};t.emit(n+"before-start",[r],o),o[B.P]&&o[B.P].dt&&(e=o[B.P].dt);var a=i.apply(this,r);return t.emit(n+"start",[r,e],a),a.then((function(e){return t.emit(n+"end",[null,e],a),e}),(function(e){throw t.emit(n+"end",[e],a),e}))})}return re[t.debugId]=1,J.forEach((e=>{r(Q[te],e,X),r(ee[te],e,X)})),r(p.gm,"fetch",Y),t.on(Y+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(Y+"done",[null,r],n)}else t.emit(Y+"done",[e],n)})),t}var ie=i(7485),oe=i(5603);class ae{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,oe.o)(this.agentIdentifier);if(!t)return null;var n=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!n||!i)return null;var a=(0,r.ZF)(),s=(0,r.el)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,n,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,n,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof p.gm?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,j.A)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,s.gD)(this.agentIdentifier,"distributed_tracing")&&(r=(0,s.D0)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var n=0;n<r.allowed_origins.length;n++){var i=(0,ie.D)(r.allowed_origins[n]);if(e.hostname===i.hostname&&e.protocol===i.protocol&&e.port===i.port){t=!0;break}}return t}isDtEnabled(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,s.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var se=i(9300),ce=i(7295),ue=["load","error","abort","timeout"],de=ue.length,le=(0,R.dV)().o.REQ,fe=(0,R.dV)().o.XHR;class he extends b{static featureName=se.T;constructor(e,t=!0){super(e,se.T,t),this.dt=new ae(e.agentIdentifier),this.handler=(e,t,r,n)=>(0,x.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};p.gm?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const r={status:t.responseStatus},n={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};pe(r,t.name),this.handler("xhr",[r,n,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,a.K7.ajax)}}))}catch(e){}ne(this.ee),Z(this.ee),function(e,t,r,n){function i(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=R,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){T(t,e)}),(0,A.jT)(!1)),p.lR||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,A.jT)(!1))}function o(e){this.params={method:e[0]},pe(this,e[1]),this.metrics={}}function s(t,r){e.loader_config.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",e.loader_config.xpid);var i=n.generateTracePayload(this.parsedOrigin);if(i){var o=!1;i.newrelicHeader&&(r.setRequestHeader("newrelic",i.newrelicHeader),o=!0),i.traceContextParentHeader&&(r.setRequestHeader("traceparent",i.traceContextParentHeader),i.traceContextStateHeader&&r.setRequestHeader("tracestate",i.traceContextStateHeader),o=!0),o&&(this.dt=i)}}function c(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=G(i);a&&(n.txSize=a)}this.startTime=(0,S.t)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<de;s++)r.addEventListener(ue[s],this.listener,(0,A.jT)(!1))}function u(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function d(e,t){var r=""+V(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function l(e,t){var r=""+V(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function f(){this.endTime=(0,S.t)()}function h(e,r){r instanceof fe&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function g(e,r){r instanceof fe&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function m(e,t,r){t instanceof fe&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,S.t)()))}function v(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,S.t)()-this.xhrCbStart,this.onload,r],r)}function b(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&p.RI&&(t=""+p.gm.location.href):e[0]&&e[0].url?t=e[0].url:p.gm?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,ie.D)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=n.generateTracePayload(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,i)&&(this.dt=i);else{var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),s(o.headers,i)&&(this.dt=i),e.length>1?e[1]=o:e.push(o)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function y(e,t){this.params={},this.metrics={},this.startTime=(0,S.t)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof le?r=i.url:p.gm?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),pe(this,r);var o=(""+(i&&i instanceof le&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=G(n.body)||0}function w(e,t){if(this.endTime=(0,S.t)(),this.params||(this.params={}),(0,ce.iW)(this.params))return;let n;this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);const i={txSize:this.txSize,rxSize:n,duration:(0,S.t)()-this.startTime};r("xhr",[this.params,i,this.startTime,this.endTime,"fetch"],this,a.K7.ajax)}function R(e){const t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(let t=0;t<de;t++)e.removeEventListener(ue[t],this.listener,!1);t.aborted||(0,ce.iW)(t)||(n.duration=(0,S.t)()-this.startTime,this.loadCazptureCalled||4!==e.readyState?null==t.status&&(t.status=0):T(this,e),n.cbTime=this.cbTime,r("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,a.K7.ajax))}}function T(e,r){e.params.status=r.status;var n=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?G(e.response):"text"===r||""===r||void 0===r?G(e.responseText):void 0}(r,e.lastSize);if(n&&(e.metrics.rxSize=n),e.sameOrigin){var i=r.getResponseHeader("X-NewRelic-App-Data");i&&((0,x.p)(O.rs,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,a.K7.metrics,t),e.params.cat=i.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",i),t.on("open-xhr-start",o),t.on("open-xhr-end",s),t.on("send-xhr-start",c),t.on("xhr-cb-time",u),t.on("xhr-load-added",d),t.on("xhr-load-removed",l),t.on("xhr-resolved",f),t.on("addEventListener-end",h),t.on("removeEventListener-end",g),t.on("fn-end",v),t.on("fetch-before-start",b),t.on("fetch-start",y),t.on("fn-start",m),t.on("fetch-done",w)}(e,this.ee,this.handler,this.dt),this.importAggregator(e)}}function pe(e,t){var r=(0,ie.D)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}const ge={},me=["pushState","replaceState"];function ve(e){const t=function(e){return(e||B.ee).get("history")}(e);return!p.RI||ge[t.debugId]++||(ge[t.debugId]=1,(0,W.YM)(t).inPlace(window.history,me,"-")),t}var be=i(3738);const{He:ye,bD:we,d3:Re,Kp:xe,TZ:Te,Lc:Ae,uP:Ee,Rz:Se}=be;class Ne extends b{static featureName=Te;constructor(e,t=!0){super(e,Te,t);if(!(0,m.V)(this.agentIdentifier))return void this.deregisterDrain();const r=this.ee;let n;ve(r),this.eventsEE=(0,F.u)(r),this.eventsEE.on(Ee,(function(e,t){this.bstStart=(0,S.t)()})),this.eventsEE.on(Ae,(function(e,t){(0,x.p)("bst",[e[0],t,this.bstStart,(0,S.t)()],void 0,a.K7.sessionTrace,r)})),r.on(Se+Re,(function(e){this.time=(0,S.t)(),this.startPath=location.pathname+location.hash})),r.on(Se+xe,(function(e){(0,x.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,a.K7.sessionTrace,r)}));try{n=new PerformanceObserver((e=>{const t=e.getEntries();(0,x.p)(ye,[t],void 0,a.K7.sessionTrace,r)})),n.observe({type:we,buffered:!0})}catch(e){}this.importAggregator(e,{resourceObserver:n})}}var Oe=i(2614);class _e extends b{static featureName=t.TZ;#i;#o;constructor(e,r=!0){let n;super(e,t.TZ,r),this.replayRunning=!1,this.#o=e;try{n=JSON.parse(localStorage.getItem("".concat(Oe.H3,"_").concat(Oe.uh)))}catch(e){}(0,g.SR)(e.agentIdentifier)&&this.ee.on(t.G4.RECORD,(()=>this.#a())),this.#s(n)?(this.#i=n?.sessionReplayMode,this.#c()):this.importAggregator(e),this.ee.on("err",(e=>{this.replayRunning&&(this.errorNoticed=!0,(0,x.p)(t.G4.ERROR_DURING_REPLAY,[e],void 0,this.featureName,this.ee))})),this.ee.on(t.G4.REPLAY_RUNNING,(e=>{this.replayRunning=e}))}#s(e){return e&&(e.sessionReplayMode===Oe.g.FULL||e.sessionReplayMode===Oe.g.ERROR)||(0,g.Aw)(this.agentIdentifier)}#u=!1;async#c(e){if(!this.#u){this.#u=!0;try{const{Recorder:t}=await Promise.all([i.e(478),i.e(249)]).then(i.bind(i,8589));this.recorder??=new t({mode:this.#i,agentIdentifier:this.agentIdentifier,trigger:e,ee:this.ee}),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording}catch(e){}this.importAggregator(this.#o,{recorder:this.recorder,errorNoticed:this.errorNoticed})}}#a(){this.featAggregate?this.featAggregate.mode!==Oe.g.FULL&&this.featAggregate.initializeRecording(Oe.g.FULL,!0):(this.#i=Oe.g.FULL,this.#c(t.Qb.API),this.recorder&&this.recorder.parent.mode!==Oe.g.FULL&&(this.recorder.parent.mode=Oe.g.FULL,this.recorder.stopRecording(),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording))}}var Ie=i(3962);class je extends b{static featureName=Ie.TZ;constructor(e,t=!0){if(super(e,Ie.TZ,t),!p.RI||!(0,R.dV)().o.MO)return;const r=ve(this.ee);Ie.tC.forEach((e=>{(0,A.sp)(e,(e=>{a(e)}),!0)}));const n=()=>(0,x.p)("newURL",[(0,S.t)(),""+window.location],void 0,this.featureName,this.ee);r.on("pushState-end",n),r.on("replaceState-end",n);try{this.removeOnAbort=new AbortController}catch(e){}(0,A.sp)("popstate",(e=>(0,x.p)("newURL",[e.timeStamp,""+window.location],void 0,this.featureName,this.ee)),!0,this.removeOnAbort?.signal);let i=!1;const o=new((0,R.dV)().o.MO)(((e,t)=>{i||(i=!0,requestAnimationFrame((()=>{(0,x.p)("newDom",[(0,S.t)()],void 0,this.featureName,this.ee),i=!1})))})),a=(0,v.s)((e=>{(0,x.p)("newUIEvent",[e],void 0,this.featureName,this.ee),o.observe(document.body,{attributes:!0,childList:!0,subtree:!0,characterData:!0})}),100,{leading:!0});this.abortHandler=function(){this.removeOnAbort?.abort(),o.disconnect(),this.abortHandler=void 0},this.importAggregator(e,{domObserver:o})}}var Pe=i(7378);const Ce={},ke=["appendChild","insertBefore","replaceChild"];function Le(e){const t=function(e){return(e||B.ee).get("jsonp")}(e);if(!p.RI||Ce[t.debugId])return t;Ce[t.debugId]=!0;var r=(0,W.YM)(t),n=/[?&](?:callback|cb)=([^&#]+)/,i=/(.*)\.([^.]+)/,o=/^(\w+)(\.|$)(.*)$/;function a(e,t){if(!e)return t;const r=e.match(o),n=r[1];return a(r[3],t[n])}return r.inPlace(Node.prototype,ke,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var o=(s=e.src,c=s.match(n),c?c[1]:null);var s,c;if(!o)return;var u=function(e){var t=e.match(i);if(t&&t.length>=3)return{key:t[2],parent:a(t[1],window)};return{key:e,parent:window}}(o);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,A.jT)(!1)),e.removeEventListener("error",f,(0,A.jT)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,A.jT)(!1)),e.removeEventListener("error",f,(0,A.jT)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,A.jT)(!1)),e.addEventListener("error",f,(0,A.jT)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const He={};function De(e){const t=function(e){return(e||B.ee).get("promise")}(e);if(He[t.debugId])return t;He[t.debugId]=!0;var r=t.context,n=(0,W.YM)(t),i=p.gm.Promise;return i&&function(){function e(r){var o=t.context(),a=n(r,"executor-",o,null,!1);const s=Reflect.construct(i,[a],e);return t.context(s).getCtx=function(){return o},s}p.gm.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return i.toString()},Object.setPrototypeOf(e,i),["all","race"].forEach((function(r){const n=i[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=i[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=i.prototype;const o=i.prototype.then;i.prototype.then=function(...e){var i=this,a=r(i);a.promise=i,e[0]=n(e[0],"cb-",a,null,!1),e[1]=n(e[1],"cb-",a,null,!1);const s=o.apply(this,e);return a.nextPromise=s,t.emit("propagate",[i,!0],s,!1,!1),s},i.prototype.then[W.Jt]=o,t.on("executor-start",(function(e){e[0]=n(e[0],"resolve-",this,null,!1),e[1]=n(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const Me={},Ke="setTimeout",Ue="setInterval",Ve="clearTimeout",Ge="-start",Fe=[Ke,"setImmediate",Ue,Ve,"clearImmediate"];function Be(e){const t=function(e){return(e||B.ee).get("timer")}(e);if(Me[t.debugId]++)return t;Me[t.debugId]=1;var r=(0,W.YM)(t);return r.inPlace(p.gm,Fe.slice(0,2),Ke+"-"),r.inPlace(p.gm,Fe.slice(2,3),Ue+"-"),r.inPlace(p.gm,Fe.slice(3),Ve+"-"),t.on(Ue+Ge,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(Ke+Ge,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}const We={};function ze(e){const t=function(e){return(e||B.ee).get("mutation")}(e);if(!p.RI||We[t.debugId])return t;We[t.debugId]=!0;var r=(0,W.YM)(t),n=p.gm.MutationObserver;return n&&(window.MutationObserver=function(e){return this instanceof n?new n(r(e,"fn-")):n.apply(this,arguments)},MutationObserver.prototype=n.prototype),t}const{TZ:qe,d3:Ze,Kp:Ye,$p:Xe,wW:Je,e5:Qe,tH:$e,uP:et,rw:tt,Lc:rt}=Pe;class nt extends b{static featureName=qe;constructor(e,t=!0){if(super(e,qe,t),!p.RI)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,n=0;const i=this.ee.get("tracer"),o=Le(this.ee),a=De(this.ee),s=Be(this.ee),c=Z(this.ee),u=this.ee.get("events"),d=ne(this.ee),l=ve(this.ee),f=ze(this.ee);function h(e,t){l.emit("newURL",[""+window.location,t])}function g(){n++,r=window.location.hash,this[et]=(0,S.t)()}function m(){n--,window.location.hash!==r&&h(0,!0);var e=(0,S.t)();this[Qe]=~~this[Qe]+e-this[et],this[rt]=e}function v(e,t){e.on(t,(function(){this[t]=(0,S.t)()}))}this.ee.on(et,g),a.on(tt,g),o.on(tt,g),this.ee.on(rt,m),a.on(Je,m),o.on(Je,m),this.ee.on("fn-err",((...t)=>{t[2]?.__newrelic?.[e.agentIdentifier]||(0,x.p)("function-err",[...t],void 0,this.featureName,this.ee)})),this.ee.buffer([et,rt,"xhr-resolved"],this.featureName),u.buffer([et],this.featureName),s.buffer(["setTimeout"+Ye,"clearTimeout"+Ze,et],this.featureName),c.buffer([et,"new-xhr","send-xhr"+Ze],this.featureName),d.buffer([$e+Ze,$e+"-done",$e+Xe+Ze,$e+Xe+Ye],this.featureName),l.buffer(["newURL"],this.featureName),f.buffer([et],this.featureName),a.buffer(["propagate",tt,Je,"executor-err","resolve"+Ze],this.featureName),i.buffer([et,"no-"+et],this.featureName),o.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),v(d,$e+Ze),v(d,$e+"-done"),v(o,"new-jsonp"),v(o,"jsonp-end"),v(o,"cb-start"),l.on("pushState-end",h),l.on("replaceState-end",h),window.addEventListener("hashchange",h,(0,A.jT)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",h,(0,A.jT)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){h(0,n>1)}),(0,A.jT)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#n,this.importAggregator(e)}#n(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}var it=i(3333);class ot extends b{static featureName=it.TZ;constructor(e,t=!0){super(e,it.TZ,t);const r=[e.init.page_action.enabled,e.init.performance.capture_marks,e.init.performance.capture_measures,e.init.user_actions.enabled];p.RI&&e.init.user_actions.enabled&&(it.Zp.forEach((e=>(0,A.sp)(e,(e=>(0,x.p)("ua",[e],void 0,this.featureName,this.ee)),!0))),it.qN.forEach((e=>(0,A.sp)(e,(e=>(0,x.p)("ua",[e],void 0,this.featureName,this.ee)))))),r.some((e=>e))?this.importAggregator(e):this.deregisterDrain()}}var at=i(993),st=i(3785);class ct extends b{static featureName=at.TZ;constructor(e,t=!0){super(e,at.TZ,t);const r=this.ee;this.ee.on("wrap-logger-end",(function([e]){const{level:t,customAttributes:n}=this;(0,st.R)(r,e,n,t)})),this.importAggregator(e)}}new class extends o{constructor(t,r){super(r),p.gm?(this.features={},(0,R.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(w),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===a.K7.softNav)),(0,d.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=u(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>a.P3[e.featureName]-a.P3[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==a.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===a.K7.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===a.K7.softNav)return;const n=function(e){switch(e){case a.K7.ajax:return[a.K7.jserrors];case a.K7.sessionTrace:return[a.K7.ajax,a.K7.pageViewEvent];case a.K7.sessionReplay:return[a.K7.sessionTrace];case a.K7.pageViewTiming:return[a.K7.pageViewEvent];default:return[]}}(r.featureName).filter((e=>!(e in this.features)));n.length>0&&(0,e.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)}))}catch(t){(0,e.R)(22,t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,R.Zm)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[he,w,N,Ne,_e,_,D,ot,ct,je,nt],loaderType:"spa"})})()})();</script>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Who Are These 1980s Ladies?</title>
+    <meta name="description" content="The 1980s were an exciting time for women around the world. Do you think you can identify all of these iconic ladies of the 1980s? You&#039;re totally going to have to prove it.">
+    <meta name="keywords" content="">
+    <meta name="csrf-token" content="dlKRxexvL0AxjSPnUZauLSyl3FUv0nLvXZWFwGdx">
+
+    
+                        <meta property="og:title" content="Who Are These 1980s Ladies?" />
+                            <meta property="og:description" content="You go, girl!" />
+                            <meta property="og:image" content="https://proxy.topixcdn.com/ipicimg/4T6D89EA7QR600V4-cp0x57x600x357-fill514x257x" />
+            
+    <script src="https://cdn.pch.com/ui/shared/js/ccpa_sp_head.js"></script>
+
+    <script>
+        window.PCHEvents = window.PCHEvents || {};
+        window.PCHEvents.cmd = window.PCHEvents.cmd || [];
+    </script>
+    <script src="https://pchassets.pch.com/sites/global/pch-events/latest/pch-events.min.js" async></script>
+
+    
+    
+
+        <script src="https://static.topixcdn.com/static/topix-pch.production.js"></script>
+<script src="https://pchassets.pch.com/sites/global/pch-guided-search/latest/pch-guided-search.js"
+    data-gs-style="default-design"
+    data-gs-data-url="//samsassets.pch.com/admin2/json/quizzes/taboola/desktop_data.json">
+</script>
+<script>
+    window.PCHMonet = window.PCHMonet || {};
+        PCHMonet.newSlots = PCHMonet.newSlots || [];
+</script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://sc.pch.com/uninav/dist/v3/css/PCHUniversalNavigation.min.css?v=1.1.1">
+    
+<link rel="stylesheet" href="https://quizzesassets.pch.com/site/dist/quiz-page/quiz-page.css?id=c2c111fe055d916c1247">
+
+    <link href="../../favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+    
+    
+
+    <script src="https://quizzesassets.pch.com/site/js/pchquiz-ga.js?sv=3.0.0"></script>
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="ZZ3H9-H7ZNT-Y5QCD-KAAER-U7LC5",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"ZZ3H9-H7ZNT-Y5QCD-KAAER-U7LC5",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="rcichbaxhqalqz2iikda-f-16f214852-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"39","ak.cp":"91187","ak.ai":parseInt("241187",10),"ak.ol":"0","ak.cr":1,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"330cff1b","ak.r":43333,"ak.a2":e,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"136.144.35.0","ak.cport":12435,"ak.gh":"23.216.133.20","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1732788870","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==MvBvtaVXUMx2s/ci3kiZiQu8ZUsFVLzXYVkg2+sQNa55sP5I0yNNipQmCO5ZQBrCw9O0zS5t/pee74JA3nw6cqT2Wk8pl7EvyHz2yFwIrvNKaUnhUcMEOCNuqXQ3xAlPaG/EKDFCeEhnEG/YxJfuiK78apZBpRkSQ3EYhoH1Yb9yKvZ3xRxtdHAt8cTE55VTsPVbiSj42txPPokYyLOOl84La7891yweU8oNZ/optkUls4pHrFkG3djmIJqvDNCiVPIrVlfKne5vr8IebITwSsuMPhOG9zDwmhBcvJxdGiVwF5l5ivnoiOBOATTEoPB5Eay6tHzaXoNZp4voa7b99ceX4b0/Ge7k8OAXrrheWvhyp6P8+lJaXWqYcB3a8VPV7nbpQ7+7Fvd8rnOwspmsJ/Eb5GkQXZdTPrRG7+3s6xo=","ak.pv":"204","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body>
+
+    <a id="ada-accessibility-statement" target="_new" tabindex="0" href="https://privacy.pch.com/accessibility"
+        style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">Accessibility
+        Statement</a>
+
+    <!--
+    Version: 39.0.3-eaf6c0185d4c21d924807de6da06b1aeef4f1600
+    Asset URL: //quizzesassets.pch.com/site
+    -->
+
+    <div id="evergageCustomBanner" data-quiz-count="0"></div>
+
+    
+    
+
+    
+    
+    <div class="uninav uninav--site-quizzes uninav--unrecognized uninav--nopass">
+
+    <a name="uni-nav-anchor"></a>
+
+    <!-- top-bar -->
+<div class="uninav__top-bar">
+    <div class="uninav__top-bar__content">
+        
+        <ul class="uninav__top-bar__links">
+                                </ul>
+
+    </div>
+</div>
+<!-- end top-bar -->
+
+
+    <div class="uninav__mainbar">
+    <div class="uninav__burger"
+         data-ga-tealium_event="hamburger_menu_click"
+         data-ga-event-once
+         data-ga-click_name="hamburger menu"
+         data-ga-click_location="header"
+         aria-label="hamburger menu">
+        <div class="uninav__burger__line uninav__burger__line--top">
+            <div class="uninav__burger__line-inner uninav__burger__line-inner--top"></div>
+        </div>
+        <div class="uninav__burger__line uninav__burger__line--mid">
+            <div class="uninav__burger__line-inner uninav__burger__line-inner--mid"></div>
+        </div>
+        <div class="uninav__burger__line uninav__burger__line--bot">
+            <div class="uninav__burger__line-inner uninav__burger__line-inner--bot"></div>
+        </div>
+    </div>
+
+            <!-- unrecognized -->
+    <nav class="uninav__components uninav__unrecognized">
+        <ul class="uninav__components-list">
+            <li>
+                <a href="https://accounts.pch.com/login?adt=cD5mKcEz7GHqswiIv5iKqe5wQIzLUqebpjEibm12YlojLj5ht292L3YgMyWmy2ITqe1YlFISHcIVHDJLqsC0EVAJHKnmn4qemO3tHyIEIMkM5ZASIcSqe2qeDG0WMAQSKn3ZynySfIwWQqexZZJbk5pJZIZ0LmFhg2005xGIFnLWATy0ERFtIVHONWIIEyJtDOnXN0EUZUplY6qe39hp3ATpzYboiAk9FyJqezr6YmIlE35JMJnxYa5bqe31lozpuqegHyuTH2pGZgZ4xgZUSToJnxIm"
+                   data-ga-tealium_event="sign_in_initiated"
+                   data-ga-click_name="sign in"
+                   data-ga-click_location="header" 
+                   class="uninav__sign-in uninav__button link-button">Sign In</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end unrecognized -->
+        
+    <a href="../../quizzes"
+   title="Quizzes"
+   data-ga-tealium_event="quizzes_logo_click"
+   data-ga-click_name="quizzes logo"
+   data-ga-click_location="header"
+   class="uninav__logo" style="background-image: url('https://sc.pch.com/uninav/dist/v3/images/uninav/logos/quizzes.png')">
+    Quizzes
+</a>
+    
+    <div class="uninav__message-center uninav__dropdown">
+    <div class="uninav__msg-container uninav__msg-container--dropdown uninav__dropdown__content">
+
+    </div>
+</div>
+    
+    
+    
+    <div class="uninav__profile-dropdown">
+        <nav class="uninav-nav__profile">
+            <ul class="">
+                 
+                    <li class="">
+                        <a class=""
+                           data-ga-tealium_event="my_account_click"
+                           data-ga-click_name="my account"
+                           data-ga-click_location="my account" 
+                           href="https://accounts.pch.com/my-account?app=QUIZZES&r=https://www.pch.com/quizzes/trending/who-are-these-1980s-ladies">MY ACCOUNT</a>
+                    </li>
+                 
+                    <li class="">
+                        <a class=""
+                           data-ga-tealium_event="profile_builder_click"
+                           data-ga-click_name="profile builder"
+                           data-ga-click_location="my account" 
+                           href="https://survey.pch.com/profile">PCH PROFILE BUILDER</a>
+                    </li>
+                 
+                    <li class="">
+                        <a class=""
+                           data-ga-tealium_event="sign_out_click"
+                           data-ga-click_name="sign out"
+                           data-ga-click_location="my account" 
+                           href="https://accounts.pch.com/logout?adt=cCJ1RvrIITuqsoUqe4Ixvt6cgStLHIEHnyHy0NDEUnXp0E6ZU9lY3qe3phpbATAzYFoiqek96yJIzr3YmMlEx5J5Jn3Yaobqeu1lHzpTqegpyugH2xGZUZ4ogZxSTIJnm">SIGN OUT</a>
+                    </li>
+                            </ul>
+        </nav>
+    </div>
+    
+</div>
+
+    <div class="uninav-nav">
+            <nav class="uninav-nav__menu uninav-nav__menu--site-nav">
+        <ul class="uninav-nav__menulist">
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="token exchange"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Token Exchange</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="token exchange_all prizes"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com">All Prizes</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="token exchange_weekly grand prizes"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/prizes/weekly-grand-prize">Weekly Grand Prizes</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="token exchange_cash &amp; gift cards"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/prizes/cash-gift-cards">Cash &amp; Gift Cards</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="token exchange_popular merchandise"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/prizes/popular-merchandise">Popular Merchandise</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="token exchange_vip exclusives"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/prizes/vip-exclusive">VIP Exclusives</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="token exchange_influencer exclusives"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/prizes/influencer-exclusive">Influencer Exclusives</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="sweepstakes"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Sweepstakes</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_all pch sweepstakes"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../sweepstakes/all-pch-sweeps">All PCH Sweepstakes</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_daily play"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../pchvip">Daily Play</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_superprize"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/superprize">Superprize</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_weekly grand prize"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://rewards.pch.com/weekly-grand-prize">Weekly Grand Prize</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_vip exclusives"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../pchvip">VIP Exclusives</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="sweepstakes_other sweepstakes"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://www.pch.com/sweepstakes">Other Sweepstakes</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="games"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Games</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_all pch games"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../games">All PCH Games</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_minute mania"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../games/minute-mania">Minute Mania</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_cards/solitaire"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../games/cards-solitaire">Cards/Solitaire</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_matching/mahjongg"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../games/matching">Matching/Mahjongg</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_word"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../games/word">Word</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_quizzes"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../quizzes">Quizzes</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="games_slots"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../slots">Slots</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="instant win"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Instant Win</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="instant win_scratch offs"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../scratchoffs">Scratch Offs</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="instant win_instant win games"
+                                       data-ga-click_location="hamburger menu"
+                                       href="../../instantwin">Instant Win Games</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="answer&amp;win"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Answer&amp;Win</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="answer&amp;win_online surveys"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://survey.pch.com/pchsurveys">Online Surveys</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="answer&amp;win_profile builder"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://survey.pch.com/profile">Profile Builder</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem  uninav-nav__site-nav__more">
+                    <a class="uninav-nav__menulink uninav-nav__site-nav__separator"
+                                                  data-ga-tealium_event="uninav_l1_open_click"
+                       data-ga-event-once      
+                       
+                       
+                       data-ga-click_name="other sites"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Other Sites</a>
+                                            <ul class="uninav-nav__menulist uninav-nav__menulist--sub">
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="other sites_pch search &amp; win"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://search.pch.com/search2">PCH Search &amp; Win</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="other sites_pch lotto"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://lotto.pch.com/onboarding">PCH Lotto</a>
+                                </li>
+                                                            <li class="uninav-nav__menuitem">
+                                    <a class="uninav-nav__menulink"
+                                       data-ga-tealium_event="uninav_l2_click"
+                                       data-ga-click_name="other sites_pch frontpage"
+                                       data-ga-click_location="hamburger menu"
+                                       href="https://frontpage.pch.com/">PCH Frontpage</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                            
+                <li class="uninav-nav__menuitem ">
+                    <a class="uninav-nav__menulink"
+                                                  href="../../winners"
+                       data-ga-tealium_event="uninav_l1_click"
+                       
+                       
+                       data-ga-click_name="winners"
+                       data-ga-click_location="hamburger menu"
+
+                                                                  >Winners</a>
+                                    </li>
+                    </ul>
+    </nav>
+        
+    </div>
+</div>
+
+    <header>
+        
+                            <nav class="quiz-nav">
+        <ul class="quiz-menu">
+                        <li class="quiz-menu-item quiz-menu-item--selected">
+                <a href="../../quizzes">Main</a>
+            </li>
+                        <li class="quiz-menu-item ">
+                <a href="../trivia">Trivia</a>
+            </li>
+                        <li class="quiz-menu-item ">
+                <a href="../travel">Travel</a>
+            </li>
+                        <li class="quiz-menu-item ">
+                <a href="../history">History</a>
+            </li>
+                        <li class="quiz-menu-item ">
+                <a href="../animals">Animals</a>
+            </li>
+                    </ul>
+    </nav>
+        
+        <div id="top-messages">
+        </div>
+    </header>
+
+    <main>
+                    
+<aside class="quizsite__leftbar ">
+    <div class="sticky-wrapper sticky--pad" data-sticky>
+        <article class="ad">
+            <div id="div-pch-placement-left-box">
+            </div>
+        </article>
+        <article class="ad">
+            <div id="div-pch-placement-left-multiple">
+            </div>
+        </article>
+    </div>
+</aside>
+
+                
+<div class="quizsite__content" >
+            <img class="email-exit-path-banner" src="who-are-these-1980s-ladies" alt="">
+    
+    
+    <div id="persistent__header-container">
+    <section class="qcontent-block" data-quiz-exp=>
+                    <persistentHeader :messages="[[&quot;Answer Questions to Earn&quot;,&quot;Tokens!&quot;]]" ></persistentHeader>
+            </section>
+</div>
+
+
+<section class="qcontent-block quiz"
+         data-quiz data-quiz-mode="0"
+         data-quiz-completed="0"
+         data-quiz-correct-amt="200"
+         data-quiz-bonus-amt="0"
+         data-quiz-post-url="/quizzes/quiz/complete"
+         data-quiz-timeout="5000"
+         data-quiz-previous-tokens=""
+         data-quiz-base-token="2000"
+         data-quiz-token-multiplier="1"
+         data-quiz-size="0"
+         data-post-createpass-url="/quizzes/user/createPassword"
+         data-quiz-post-no-thanks-url="/quizzes/quiz/no-thanks"
+         data-quiz-hide-answer-results=""
+         data-quiz-next-content-href=""
+>
+    
+    <div id="quizzy">
+        <topix-content
+            :provider="provider"
+            :item-num="questionNum"
+            :items-completed="answeredQuestions"
+            :total-items="totalQuestions"
+            :id="'38168'"
+            :render-func="'renderQuizDesktopTriviaWaterfallPCH'"
+            :topix-options="'{&quot;videoAdDivID&quot;:&quot;182cbea9-0427-452c-8d36-508625668fc9&quot;,&quot;hideAnswerResults&quot;:false}'"
+                            :complete="complete">
+
+        <div id="pagination-video-player"  slot="interstitial"></div>
+        </topix-content>
+    </div>
+    <div class="quiz-overlay" data-quiz-overlay></div>
+
+                        <div class="quiz-gos-blue__video" data-quiz-gos-video>
+        <div class="quiz-gos-blue__tokens" data-quiz-video-msg><span>Calculating Your Score...</span></div>
+        <div id="gos-video-player"></div>
+    </div>
+
+<div class="quiz-gos-blue" data-quiz-gos>
+
+
+
+    <img src="https://quizzesassets.pch.com/site/vendor/quizzes/images/pch-quizzes-logo.png" alt="PCH Quizzes" data-quiz-gos-logo>
+
+    <div class="quiz-gos-blue__message" data-quiz-gos-message>
+        <div tabindex="-1" class="message-score">Your Score: <span data-quiz-gos-message-score></span></div>
+        <div class="message-title" data-quiz-gos-message-title></div>
+        <div class="message-desc" data-quiz-gos-message-desc></div>
+    </div>
+
+    <div aria-hidden="true" class="dotted-rule"></div>
+
+    <div aria-label = "Great Job!" class="quiz-gos-blue__congrats"></div>
+
+    <div class="quiz-gos-blue__tech-diff" data-quiz-gos-tech-diff style="display:none">We are experiencing technical difficulties when retrieving tokens.  We apologize for the inconvenience.</div>
+    <div class="quiz-gos-blue__token-txt">You've earned <span data-quiz-gos-tokens></span> tokens for completing this quiz!</div>
+    <div class="quiz-gos-blue__tokens"><span>Tokens Earned</span><span data-quiz-gos-bonus></span><div class="quiz-gos-blue__burst" data-quiz-gos-burst><span>1x</span>Tokens</div></div>
+
+            <a class="quiz-gos-blue__next-button" href="https://mpo.pch.com/register/QUIZTAB?adt=c0woNkF9uUavUlyLHCtH7ugbtL3Yiqe3qej5lt2L2LhYg91S3cKnKM6qeiZyWUEzozocqeipuu21Pqeloxn01mIT1FMJnhYy5ykJEUqevpyo31xW31lpJMgNhSESNyHIRInSP"><button class="qbutton">Register Now</button></a>
+        <a class="quiz-gos-blue__back-home" href="what-do-these-nine-letter-words-mean" data-decorator="QuizExitLink" data-decorator-config="{&quot;nextQuizUrl&quot;:&quot;\/\/www.pch.com\/quizzes\/trending\/what-do-these-nine-letter-words-mean&quot;,&quot;hidden&quot;:false}">Play The Next Quiz</a>
+    </div>
+
+
+            
+    
+    <div id="taboola-quizzes-feed"></div>
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({
+        mode: 'alternating-thumbnails-a',
+        container: 'taboola-quizzes-feed',
+        placement: 'quizzes feed',
+        target_type: 'mix'
+    });
+</script>
+
+</section>
+
+
+<script type="text/javascript">
+    var quizId = '38168';
+    var isCompleted = '';
+    var nextQuizUrl = '//www.pch.com/quizzes/trending/what-do-these-nine-letter-words-mean';
+    var nextQuizUrlEncoded = '%2F%2Fwww.pch.com%2Fquizzes%2Ftrending%2Fwhat-do-these-nine-letter-words-mean';
+    var quizAlias = 'trending_38168';
+</script>
+
+<!-- Quiz Tech Difficulties -->
+<template data-decorator="QuizLightbox" data-decorator-config="{&quot;immediate&quot;:false,&quot;priority&quot;:10,&quot;state&quot;:&quot;ERROR&quot;}">
+    <div id="technical-difficulty" class="lightboxDefaultSkin">
+        <span class="logo"></span>
+        <p class="title">Oops, this quiz isn’t loading.</p>
+        <p class="subTitle">Now loading the next quiz.</p>
+        <a href="what-do-these-nine-letter-words-mean" class="action">Continue<span></span></a>
+        <a href="what-do-these-nine-letter-words-mean" class="close lightboxClose">X</a>
+    </div>
+</template>
+
+<!-- For guest user  -->
+<template data-decorator="QuizLightbox" data-decorator-config="{&quot;immediate&quot;:false,&quot;priority&quot;:50,&quot;state&quot;:&quot;UNLOADING&quot;}">
+    <div id="unrecognized" class="lightboxDefaultSkin">
+        <span class="logo"></span>
+        <p class="title">Your tokens and prize entries are waiting.</p>
+        <p class="subTitle">Complete your Registration now.</p>
+
+        <a href="https://mpo.pch.com/register/QUIZTAB?adt=c0woNkF9uUavUlyLHCtH7ugbtL3Yiqe3qej5lt2L2LhYg91S3cKnKM6qeiZyWUEzozocqeipuu21Pqeloxn01mIT1FMJnhYy5ykJEUqevpyo31xW31lpJMgNhSESNyHIRInSP" class="action">Continue<span></span></a>
+        <a href="what-do-these-nine-letter-words-mean" class="forfeit">No thanks! Forfeit my tokens.</a>
+        <a href="javascript:void 0;" class="close lightboxClose">X</a>
+    </div>
+</template>
+
+
+<!-- For user without password  -->
+
+<!-- For user without address  -->
+
+<script>
+    if(!window.playGOSVideo) window.playGOSVideo = function playGOSVideo( quizUIHook ) {
+        // initialize PCHMonet namespace without overwriting
+        window.PCHMonet = window.PCHMonet || {};
+        // initialize newVideo without overwriting
+        PCHMonet.newVideo = PCHMonet.newVideo || [];
+
+        // create player with newVideo.push
+        try {
+            if(document.getElementById('gos-video-player')) {
+                PCHMonet.newVideo.push({
+                    id: 'gos-video-player', // (required) container id where video will be inserted
+                    callback: function() {
+                        var player = PCHMonet.player['gos-video-player']; // player is indexed by container id
+                        quizUIHook(player);
+                    }
+                });
+            } else {
+                quizUIHook(null);
+            }
+        } catch(err) {
+            quizUIHook(null);
+        }
+    }
+
+    if(!window.playInterstitialVideo) window.playInterstitialVideo = function playInterstitialVideo( quizUIHook ) {
+        // initialize PCHMonet namespace without overwriting
+        window.PCHMonet = window.PCHMonet || {};
+        // initialize newVideo without overwriting
+        PCHMonet.newVideo = PCHMonet.newVideo || [];
+
+        // create player with newVideo.push
+        try {
+            if(document.getElementById('pagination-video-player')) {
+                const pbVideo = document.querySelector('.pbs');
+                if (pbVideo) {
+                    pbVideo.parentElement.removeChild(pbVideo);
+                }
+                PCHMonet.newVideo.push({
+                    id: 'pagination-video-player', // (required) container id where video will be inserted
+                    callback: function() {
+                        var player = PCHMonet.player['pagination-video-player']; // player is indexed by container id
+                        player.on('playerComplete', function() {
+                            // insert post-video navigation logic here
+                            console.log('PCH Video Message >>> playerComplete callback fired');
+                            quizUIHook();
+                            // ssga.trackSlideshowVideoComplete();
+                        });
+
+                    }
+                });
+            } else {
+                quizUIHook(null);
+            }
+        } catch(err) {
+            quizUIHook(null);
+        }
+    }
+
+        function floatingVid(d,s,n,id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.className = n;
+        js.src = "https://stream.playbuzz.com/embed/sdk.js?embedId=182cbea9-0427-452c-8d36-508625668fc9";
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+    </script>
+        <article id="accelerator">
+    <accelerator
+        :quiz-complete-count="1"
+        :data="{&quot;total_quizzes&quot;:10,&quot;halfway_quizzes&quot;:5,&quot;promotion_text&quot;:&quot;The PCH SuperPrize&quot;,&quot;completed_text&quot;:&quot;You have earned all your Bonus Entries today!&quot;,&quot;initial&quot;:{&quot;multiplier&quot;:1},&quot;halfway&quot;:{&quot;multiplier&quot;:2},&quot;last&quot;:{&quot;multiplier&quot;:5},&quot;user_count&quot;:1}"
+        :promotion-text="'The PCH SuperPrize'"
+        :completed-text="'You have earned all your Bonus Entries today!'"
+        :unrecognized-text="'Sign In or Register to Unlock Prize Entries'"
+        assets_url="//quizzesassets.pch.com/site"
+    ></accelerator>
+</article>
+
+    </div>
+
+                    
+<aside class="quizsite__sidebar ">
+    <div class="sticky-wrapper" data-sticky>
+
+        <article class="ad">
+            <div id="div-pch-placement-multiple">
+            </div>
+        </article>
+        <article class="ad">
+            <div id="div-pch-placement-box2">
+            </div>
+        </article>
+
+    </div>
+</aside>
+
+            </main>
+
+            <style>
+   *{box-sizing:border-box;margin:0;padding:0}.sitefooter{color:#fff;font-family:"Source Sans 3",sans-serif;clear:both}.sitefooter__nav{background:#1c1c1c;padding:10px 16px 0}.sitefooter a,.sitefooter a:active,.sitefooter a:hover,.sitefooter a:link,.sitefooter a:visited{color:#fff;text-decoration:none}.elevate-footer .footer__privacy a:hover,.sitefooter a:hover{text-decoration:underline}.sitefooter__header{width:100%;margin:0 auto 32px;max-width:1200px;font-family:Poppins,sans-serif;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;border-bottom:2px solid #515151;padding-bottom:48px;font-weight:800;font-size:24px;line-height:1.5}.sitefooter__header .logo{grid-row-start:2;max-width:462px;width:100%;margin:0 0 7px;justify-self:center}.sitefooter__header p{grid-column-start:2;justify-self:center;align-self:end;letter-spacing:1px;margin:0}.sitefooter__body{width:100%;margin:0 auto;max-width:1200px;display:flex;padding:1rem 1rem 3.5rem;justify-content:space-between}.sitefooter__navgroups{width:35%;max-height:458px;display:flex;flex-direction:column;flex-wrap:wrap;text-align:left;margin-right:1rem}.sitefooter__navgroup:first-child{margin-bottom:3.5rem}.sitefooter__navgroup{max-width:50%;flex-grow:1;flex-basis:0;margin-right:1rem}.sitefooter__navgroup__title{font-family:Inter,sans-serif;font-size:16px;font-weight:700;line-height:1.2;margin-bottom:9px;text-transform:uppercase}.sitefooter__navgroup__links{font-size:14px;font-weight:400;line-height:1.29;list-style:none}.sitefooter__navgroup__link{padding-bottom:9px}.sitefooter__navgroup__link:last-child{padding-bottom:0}.elevate-footer .sitefooter__social{display:flex;list-style:none;justify-self:center;margin-left:2rem}.elevate-footer .sitefooter__social__link{margin-top:14px}.elevate-footer .sitefooter__social__link a{position:relative;display:block;width:51px;height:51px;margin-right:24px}.elevate-footer .sitefooter__social__link--pchblog{padding-left:52px}.elevate-footer .sitefooter__third-party{width:60%;max-width:760px}.elevate-footer .sitefooter__social__link--third-party{display:flex;justify-content:space-between;padding:30px 15px 18px;background:#fff;border-radius:15px;width:fit-content}.elevate-footer .sitefooter__social__link--third-party .truste{width:40%}.elevate-footer .sitefooter__social__link--third-party .iab{width:20%}.elevate-footer .sitefooter__social__link--third-party .bbb{width:35%}.elevate-footer .sitefooter__social__link--third-party a{margin-right:14px}.elevate-footer .sitefooter__social__link--third-party a:last-child{margin-right:0}.elevate-footer .sitefooter__social__link--third-party a img{width:100%}.elevate-footer .sitefooter__social__link a::before{content:" ";position:absolute;top:0;left:0;width:100%;height:100%;background:var(--social-logo) 0 0 no-repeat;background-size:contain}.elevate-footer .sitefooter_copy-container{background:#343434;padding:18px 0 35px}.elevate-footer .sitefooter__copy{width:100%;max-width:1198px;margin:0 auto;text-align:center}.elevate-footer .sitefooter__legal{font-size:12px;font-weight:400;line-height:1.14;margin-bottom:20px}.elevate-footer .sitefooter__legal b{font-size:16px}.elevate-footer .sitefooter__trademark{font-size:12px;font-weight:400;line-height:1.333}.elevate-footer .footer__privacy{width:100%;max-width:1198px;margin:0 auto 20px;align-items:center;justify-content:flex-start}.elevate-footer .footer__privacy a{display:flex;align-content:center;justify-content:center;text-decoration:none;font-size:14px;font-weight:400;line-height:1.333}.elevate-footer .footer__privacy img{margin-left:5px}@media screen and (max-width:640px){.elevate-footer .sitefooter__social .sitefooter__social__link a,.sitefooter__social__link--third-party a{margin-right:0}.elevate-footer .sitefooter__header{display:flex;flex-direction:column;align-items:center}.elevate-footer .sitefooter__header p{align-self:center;margin-bottom:.5rem}.elevate-footer .sitefooter__header .logo{margin-bottom:24px}.elevate-footer .sitefooter__social{justify-content:space-between;margin-left:0;width:95%}.elevate-footer .sitefooter__navgroups .sitefooter__navgroup{width:50%}.elevate-footer .sitefooter__social__link--third-party{width:100%;padding:10px 10px 4px;border-radius:10px}.elevate-footer .sitefooter__other{margin-left:-6px}.elevate-footer .sitefooter__other__link{margin-bottom:18px}.elevate-footer .sitefooter__other__link:first-child{margin-left:0}.sitefooter__nav{padding:15px 16px 0}.sitefooter__header{padding-bottom:38px}.sitefooter__body{flex-direction:column;padding:.5rem}.sitefooter__navgroups{width:100%;max-height:480px}.sitefooter__navgroup__title{font-size:14px}.elevate-footer .sitefooter__third-party{width:100%;margin-bottom:1rem}.sitefooter_copy-container{padding:18px 20px 35px}.sitefooter__legal{margin-bottom:30px}.sitefooter__legal b{font-size:14px;line-height:20px}.sitefooter__trademark{font-size:9px}}@media screen and (min-width:641px) and (max-width:1024px){.sitefooter__navgroups{max-height:480px}.sitefooter__third-party{margin-left:1rem}}
+</style>
+<div class="elevate-footer">
+    <footer class="sitefooter">
+        <nav class="sitefooter__nav">
+            <div class="sitefooter__header">
+                <!-- TO DO: replace logo with hosted version when available -->
+                <img class="logo" src="https://cdn.pch.com/ui/shared/footer/pchlogo.png" alt="PCH Logo">
+                <p><b>LET'S CONNECT</b></p>
+                <ul class="sitefooter__social">
+                                                                        <li
+                                style="--social-logo: url(https://cdn.pch.com/ui/shared/footer/facebook-icon.svg)" class="sitefooter__social__link">
+                                <a href="https://www.facebook.com/pch" target="_blank" 
+                                    aria-label="pchonfacebook"
+                                    data-ga-event="footer_click"
+                                    data-ga-click_name="facebook"
+                                    data-ga-click_location="footer"></a>
+                            </li>
+                                                    <li
+                                style="--social-logo: url(https://cdn.pch.com/ui/shared/footer/instagram-icon.svg)" class="sitefooter__social__link">
+                                <a href="https://www.instagram.com/pchofficial/" target="_blank" 
+                                    aria-label="pchoninstagram"
+                                    data-ga-event="footer_click"
+                                    data-ga-click_name="instagram"
+                                    data-ga-click_location="footer"></a>
+                            </li>
+                                                    <li
+                                style="--social-logo: url(https://cdn.pch.com/ui/shared/footer/youtube-icon.svg)" class="sitefooter__social__link">
+                                <a href="https://www.youtube.com/user/pchprizepatrol" target="_blank" 
+                                    aria-label="pchonyoutube"
+                                    data-ga-event="footer_click"
+                                    data-ga-click_name="youtube"
+                                    data-ga-click_location="footer"></a>
+                            </li>
+                                                    <li
+                                style="--social-logo: url(https://cdn.pch.com/ui/shared/footer/twitter-icon.svg)" class="sitefooter__social__link">
+                                <a href="https://twitter.com/pchdotcom/" target="_blank" 
+                                    aria-label="pchontwitter"
+                                    data-ga-event="footer_click"
+                                    data-ga-click_name="twitter"
+                                    data-ga-click_location="footer"></a>
+                            </li>
+                                                    <li
+                                style="--social-logo: url(https://cdn.pch.com/ui/shared/footer/tiktok-icon.svg)" class="sitefooter__social__link">
+                                <a href="https://www.tiktok.com/@pchofficial" target="_blank" 
+                                    aria-label="pchontiktok"
+                                    data-ga-event="footer_click"
+                                    data-ga-click_name="tiktok"
+                                    data-ga-click_location="footer"></a>
+                            </li>
+                                                            </ul>
+            </div>
+            <div class="sitefooter__body">
+                <div class="sitefooter__navgroups">
+                                                                        <section class="sitefooter__navgroup">
+                                <p class="sitefooter__navgroup__title">Other Channels</p>
+                                <ul class="sitefooter__navgroup__links">
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="../../index.html" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCH.com"
+                                                data-ga-click_location="footer">
+                                                    PCH.com
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://search.pch.com" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCH Search&amp;Win"
+                                                data-ga-click_location="footer">
+                                                    PCH Search&amp;Win
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="../../games" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCH Games"
+                                                data-ga-click_location="footer">
+                                                    PCH Games
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="../../quizzes" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCH Quizzes"
+                                                data-ga-click_location="footer">
+                                                    PCH Quizzes
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://survey.pch.com/pchsurveys" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCHAnswer&amp;Win"
+                                                data-ga-click_location="footer">
+                                                    PCHAnswer&amp;Win
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://blog.pch.com/" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="PCH Blog"
+                                                data-ga-click_location="footer">
+                                                    PCH Blog
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </section>
+                                                    <section class="sitefooter__navgroup">
+                                <p class="sitefooter__navgroup__title">MEDIA CENTER</p>
+                                <ul class="sitefooter__navgroup__links">
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://info.pch.com/media-contact" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Media Inquiries"
+                                                data-ga-click_location="footer">
+                                                    Media Inquiries
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://info.pch.com/general-sweepstakes" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Sweepstakes Information"
+                                                data-ga-click_location="footer">
+                                                    Sweepstakes Information
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://media.pch.com" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Advertise With Us"
+                                                data-ga-click_location="footer">
+                                                    Advertise With Us
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </section>
+                                                    <section class="sitefooter__navgroup">
+                                <p class="sitefooter__navgroup__title">CUSTOMER CARE CENTER</p>
+                                <ul class="sitefooter__navgroup__links">
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://info.pch.com/customer-service" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="About PCH"
+                                                data-ga-click_location="footer">
+                                                    About PCH
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://info.pch.com/fraud-protection" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Scam Prevention"
+                                                data-ga-click_location="footer">
+                                                    Scam Prevention
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="../../localwinners" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Local Area Winners"
+                                                data-ga-click_location="footer">
+                                                    Local Area Winners
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://preferences-mgr.trustarc.com/?pid=pch01&amp;aid=pch_pub01&amp;type=pch" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Ad Preferences"
+                                                data-ga-click_location="footer">
+                                                    Ad Preferences
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://privacy.pch.com/accessibility" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Accessibility Statement"
+                                                data-ga-click_location="footer">
+                                                    Accessibility Statement
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://privacy.pch.com/" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Privacy Policy"
+                                                data-ga-click_location="footer">
+                                                    Privacy Policy
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://privacy.pch.com/pchdotcom-tou" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Terms of Use"
+                                                data-ga-click_location="footer">
+                                                    Terms of Use
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://rules.pch.com/viewrulesfacts/?mailid=UniGen" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Official Rules"
+                                                data-ga-click_location="footer">
+                                                    Official Rules
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://rules.pch.com/viewrulesfacts/?mailid=UniGen" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Sweepstakes Facts"
+                                                data-ga-click_location="footer">
+                                                    Sweepstakes Facts
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://pch.custhelp.com/app/home" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="FAQ&#039;s"
+                                                data-ga-click_location="footer">
+                                                    FAQ&#039;s
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://myaccount.pch.com/Home/Index2?PaymentSourceId=0&amp;SessionExpired=False" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Pay Online"
+                                                data-ga-click_location="footer">
+                                                    Pay Online
+                                            </a>
+                                        </li>
+                                                                            <li class="sitefooter__navgroup__link">
+                                            <a href="https://info.pch.com/contact-us" target="_blank"
+                                                data-ga-event="footer_click"
+                                                data-ga-click_name="Info Center"
+                                                data-ga-click_location="footer">
+                                                    Info Center
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </section>
+                                                            </div>
+                                    <div class="sitefooter__third-party">
+                        <div class="sitefooter__social__link--third-party">
+                                                            <a target="_blank" rel="noopener noreferrer"
+                                   data-ga-event="footer_click"
+                                   data-ga-click_name="TRUSTe"
+                                   data-ga-click_location="footer"
+                                   href="https://privacy.truste.com/privacy-seal/validation?rid=6c68c1fd-0e45-4e30-a5c5-9e86439f1bdb" class="truste"
+                                >
+                                    <img src="https://hostedseal.trustarc.com/privacy-seal/seal?rid=6c68c1fd-0e45-4e30-a5c5-9e86439f1bdb" alt="TRUSTe Certified Privacy seal">
+                                </a>    
+                                                            <a target="_blank" rel="noopener noreferrer"
+                                   data-ga-event="footer_click"
+                                   data-ga-click_name="IAB"
+                                   data-ga-click_location="footer"
+                                   href="https://www.iab.net/iab_products_and_industry_services/508676/compliance/81617" class="iab"
+                                >
+                                    <img src="https://cdn.pch.com/ui/shared/footer/iab.png" alt="Interactive Advertising Bureau">
+                                </a>    
+                                                            <a target="_blank" rel="noopener noreferrer"
+                                   data-ga-event="footer_click"
+                                   data-ga-click_name="Better Business Bureaus"
+                                   data-ga-click_location="footer"
+                                   href="https://www.bbb.org/new-york-city/business-reviews/marketing-programs-and-services/publishers-clearing-house-llc-in-port-washington-ny-22145#sealclick" class="bbb"
+                                >
+                                    <img src="https://cdn.pch.com/ui/shared/footer/bbb.png" alt="better business bureau">
+                                </a>    
+                                                    </div>
+                    </div>
+                            </div>
+            
+        </nav>
+        <div class="sitefooter_copy-container">
+                            <div class="footer__privacy footer__other-links--nav-link">
+                    <a href="https://privacy.pch.com/privacy-choices" target="_blank"
+                        data-ga-event="footer_click"
+                        data-ga-click_name="Privacy Choices"
+                        data-ga-click_location="footer">
+                            Your Privacy Choices
+                            <img src="https://cdn.pch.com/ui/shared/privacyoptions.svg" width="29" height="14" alt="Privacy Options">
+                    </a>
+                </div>
+                        <div class="sitefooter__copy">
+                <p class="sitefooter__legal">
+                    <b>NO PURCHASE OR FEE NECESSARY TO ENTER. A PURCHASE WON&#039;T IMPROVE AN INDIVIDUAL&#039;S CHANCE OF WINNING.</b>
+                    <br /><br />
+                    © Copyright 2024 PCH.com. All Rights Reserved.
+                </p>
+                <p class="sitefooter__trademark">
+                    All trademarks and registered trademarks appearing on this site are the property of their respective owners. Said owners do not endorse nor are they affiliated with pch.com or its promotions.
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdn.pch.com/ui/shared/js/ccpa_sp_body.js"></script>
+<script>
+    window.pch_ccpa.init({
+        onloadCallback: () => {
+            window.pch_ccpa.attach()
+        }
+    });
+</script>    
+    <script type="text/javascript" src="https://quizzesassets.pch.com/site/vendor/googleanalytics/js/googleanalytics.js"></script>
+            <script type="text/javascript">
+
+                PCHGA = new PCHGA('QUIZZES', 'DESKTOP', 'quiz','https://www.pch.com/quizzes/trending/who-are-these-1980s-ladies');
+                            </script>
+
+
+
+
+<script type="text/javascript">
+window = {};
+(function (context) {
+context["utag_data"] = {"quiz_name":"who_are_these_1980s_ladies?","quiz_category":"trending","page_name":"quiz","device_type":"DESKTOP","user_agent_id":"37812364","property_name":"QUIZZES","GMT":"","login_status":"Guest","user_level":"","user_title":"","user_first_name":"","user_last_name":"","user_age":"","age_range":"","user_state":"","property_membership":[],"segment_membership":[],"user_gender":"","user_gender_int":0,"date_of_birth":"","user_address1":"","user_address2":"","user_city":"","user_zip":"","user_email_hash":"","first_ever_reg_date":"","oat":"","gmt":"888e2e00-a8c7-4402-a011-d5fbe1b19a6c","dns":1,"encsso":"","vip_level":"none","ip":"136.144.35.132","AD_ID":{"lr":null,"ep":null,"yc":null,"amzn":null,"td":null},"dnc":1,"stream_number":0,"subscriber_random_id_a":0,"subscriber_random_id_b":0,"source_category":"organic","pch_source":"organic","online_experience_code":"","gpt_page_type":"quiz","gpt_slots":"quiz","site_mode":"tab","acquisition_id":"organic","quiz_size":20,"acq_path":0,"no_ad":false,"evergage":{"quiz":{"completed":0}}}
+context["assets_url"] = '//quizzesassets.pch.com/site'
+context["sessionPulse"] = {"url":"\/quizzes\/sessionpulse"}
+context["isDesktop"] = true
+context["video_ad_div"] = '182cbea9-0427-452c-8d36-508625668fc9'
+context["unsMessage"] = []
+context["tokenCenterMessages"] = []
+context["secure_url"] = '/user'
+context["evergageData"] = {"totalQuizCompleted":0}
+context["tokenCenterOptions"] = {"view":"2","errorText":"Loading...","nameLimit":15,"autoTime":3000,"handler":"\/quizzes\/tokencenter\/","lastActivity":"<span class='earn-tokens'>Earn 1,000 Tokens<\/span><br>when you complete registration!"}
+context["PCH"] = {"env":"prod","sitecode":"QUIZSITE","registrationUrl":"https:\/\/accounts.pch.com\/register?adt=cCJ1RvrIITuqsoUqe4Ixvt6cgStLHIEHnyHy0NDEUnXp0E6ZU9lY3qe3phpbATAzYFoiqek96yJIzr3YmMlEx5J5Jn3Yaobqeu1lHzpTqegpyugH2xGZUZ4ogZxSTIJnm","registrationAlias":"registration","ssoui":"desktop"}
+context["PCHUSER"] = {"type":"Guest","title":"","age":"0","gender":"","gmt":"","oat":"","level":"","fullname":"","firstName":"","lastName":"","messageName":" .","segments":"","seglist":[],"reglist":[],"optins":[],"registrations":"","isMiniReg":false,"isSocialReg":false,"firstRegDate":"","isFullyRegistered":false,"isRecognizedUser":false,"availableTokens":0,"hasRewardsSpin":false,"hasLevelUp":false,"totalTokens":0,"tokenLevel":"","createPasswordTokens":25000,"createPasswordMemberStatus":"silver"}
+context["TokenCenter"] = []
+context["isFullyRegisteredUser"] = false
+context["isTokenAward"] = true
+context["isTablet"] = false
+context["isMobile"] = false
+context["csrfToken"] = 'dlKRxexvL0AxjSPnUZauLSyl3FUv0nLvXZWFwGdx'
+context["UUID"] = 0
+})(window);
+</script>
+
+
+<script type='text/javascript' src='https://quizzesassets.pch.com/site/js/tealium.js?v=3.0.0'></script><script type='text/javascript' src='who-are-these-1980s-ladies'></script><script type="text/javascript" src="https://tags.tiqcdn.com/utag/pch/pchquizzes/prod/utag.js"></script>
+
+<script type="text/javascript">
+    if (typeof Object.assign != 'function') {
+        Object.assign = function(target, varArgs) { // .length of function is 2
+            'use strict';
+            if (target == null) { // TypeError if undefined or null
+                throw new TypeError('Cannot convert undefined or null to object');
+            }
+            var to = Object(target);
+            for (var index = 1; index < arguments.length; index++) {
+                var nextSource = arguments[index];
+                if (nextSource != null) { // Skip over if undefined or null
+                    for (var nextKey in nextSource) {
+                        // Avoid bugs when hasOwnProperty is shadowed
+                        if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+                            to[nextKey] = nextSource[nextKey];
+                        }
+                    }
+                }
+            }
+            return to;
+        };
+    }
+    window.PCH = window.PCH || {};
+    window.PCH.MiniRegURL = "https://mpo.pch.com/register/QUIZTAB?adt=cHiu8k0suH7EYqeS9eQMtZPwbtL3Yiqe3qej5lt2L2LhYg91S3cKnKM6NNZISIcIFHDHV";
+    window.PCHUSER = window.PCHUSER || {};
+    window.TokenCenter = window.TokenCenter || {};
+
+    PCH.uniExp = PCH.uniExp || {};
+
+    Object.assign(window.PCH,PCH);
+    Object.assign(window.PCHUSER,PCHUSER);
+
+    PCH.uniExp.tokenCenterOptions = window.tokenCenterOptions;
+    PCH.uniExp.tokenCenterOptions.autoUpdate = true;
+
+
+
+
+
+</script>
+
+
+    <script type="text/javascript">
+        window.PCH = window.PCH || {};
+        window.PCH.vip = {"firstPrereqDelay":4000,"afterPrereqDelay":1000,"config":{"config_url":"\/\/sc.pch.com\/vip\/config.json","exec_mode":"manual","badge_target":".uninav__logoholder","create_pass_target":".uninav__continue-registration a","alert_auto_close":5,"alert_enabled":true,"site_id":"quizzes","device_type":"DESKTOP","display_mode":"push-down-condensed"}};
+        window.PCH.vip.status = {"act":0,"level":0,"badge":0,"other":[],"alert":0};
+    </script>
+
+<script type="text/javascript" src="https://sc.pch.com/uninav/dist/v3/js/PCHUniversalNavigation.min.js?v=1.1.1"></script>
+
+<!-- ga proxy script -->
+<script type="module">
+    import GaProxy from 'https://cdn.pch.com/ui/shared/ga_proxy/latest/GaProxy.min.js';
+            
+    window.PCH = window.PCH || {};        
+    window.PCH.GaProxy = new GaProxy(document.body, window?.utag);
+    console.log("GaProxy initialized", window.PCH.GaProxy);        
+</script>
+
+<script>
+    // Show Token Center Message on Page Load
+    if (tokenCenterMessages) {
+        for (var i = 0, k = tokenCenterMessages.length; i < k; ++i) {
+            if (tokenCenterMessages) {
+                PCH.uninav.controller.showMessage(tokenCenterMessages[i]);
+            }
+        }
+    }
+
+    
+    if ( PCH.uninav && PCH.uninav.controller.config) {
+        PCH.uninav.controller.config.completeRegTarget = function () {
+            window.location.href = window.PCH.MiniRegURL;
+        };
+    };
+    </script>
+
+
+
+
+    <script src="https://cdn.pch.com/ui/shared/js/ccpa_sp_body.js"></script>
+    <script>
+        window.pch_ccpa.init({
+            onloadCallback: () => {
+                window.pch_ccpa.attach()
+            }
+        })
+    </script>
+
+    <script type="text/javascript">
+      window.enableAccountsConfig = true;
+      PCH.uniExp = PCH.uniExp || {};
+</script>
+
+    
+<script src="https://quizzesassets.pch.com/site/dist/quiz-page/quiz-page.js?id=266683fcdaf2ff760e6c"></script>
+    
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c72205da0c","applicationID":"355166534","transactionName":"NgMGZhFWC0VWUk1bDg9JJVEXXgpYGEBMWxs=","queueTime":0,"applicationTime":57,"atts":"GkQFEFlMGEs=","errorBeacon":"bam.nr-data.net","agent":""}</script><script type="text/javascript"  src="../../SNprA/21g/0j_z/5SMD/Yl9b/1YLE0QSVcLwJiE/ZyMtejt5PAc/KGx/0FmUachoB"></script></body>
+
+</html>
